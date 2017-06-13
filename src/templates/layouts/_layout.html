@@ -1,0 +1,19 @@
+{% import "helpers/_mixins.html" as mixins %}
+
+<!doctype html>
+<html>
+{% include "layouts/_head.html" %}
+
+<body class="{{bodyClasses}}">
+
+	<!-- BEGIN content -->
+	<main class="{{mainClasses}}">
+		{% block content %}{% endblock %}
+	</main>
+	<!-- END content -->
+
+	<!-- BEGIN scripts -->
+	<script type="text/javascript" src="js/app.js"></script>
+	<script type="text/javascript" src="js/jquery.nanoscroller.min.js"></script>
+</body>
+</html>

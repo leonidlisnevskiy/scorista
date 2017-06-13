@@ -1,0 +1,50 @@
+//Scaffolding
+body
+	background-color: $body-bg
+	+font-family($roboto-light)
+	line-height: $line-height-base
+	font-size: $text-reg //16px
+
+section
+	+clr
+	display: inline-block
+	width: 100%
+
+.bg-overlay
+	position: absolute
+	width: 100%
+	height: 100%
+	top: 0
+	left: 0
+	right: 0
+	bottom: 0
+	z-index: 0
+	&:before
+		content: ''
+		display: block
+		position: absolute
+		top: 0
+		left: 0
+		right: 0
+		bottom: 0
+		height: 100%
+		width: 100%
+	&.bg-overlay--gray
+		&:before
+			background-color: rgba(#484848, .85)
+	&.bg-overlay--white
+		&:before
+			background-color: rgba($white, .80)
+			+cover
+
+.text-lead
+	font-size: $text-lg //30px
+	text-transform: uppercase
+
+.text-md
+	font-size: $text-md //20px
+	line-height: 1.2 //24px
+	+font-family($roboto-reg)
+
+.text-sm
+	font-size: $text-sm //14px

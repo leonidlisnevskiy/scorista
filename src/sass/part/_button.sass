@@ -1,0 +1,20 @@
+.btn
+	outline: none
+	cursor: pointer
+	border: none
+	border-radius: 50px
+	color: $white
+	display: inline-block
+	text-align: center
+	font-size: $text-reg //16px
+	text-decoration: none
+	+nosel
+	padding: 15px 20px
+	background: none
+	position: relative
+	will-change: transition, color
+	transition: all .24s ease-in-out
+	&:active
+		top: 1px
+	&.btn-ghost
+		background-color: transparent
