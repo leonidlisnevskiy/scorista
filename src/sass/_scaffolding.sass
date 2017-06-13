@@ -26,7 +26,6 @@ section
 		border-top: 2px solid $border-light
 		border-bottom: 2px solid $border-light
 		position: relative
-		margin-bottom: 50px
 		&:after
 			left: 50%
 			top: 50px
@@ -50,11 +49,46 @@ section
 			margin-right: 10px
 
 
-.lorem
-	padding-bottom: 50px
+.field
+	padding: 50px 0
 	border-bottom: 2px solid $border-light
 	font-size: 0
-
+	vertical-align: top
+	+clr
+	&:last-child
+		border-bottom: none
+	p
+		display: inline-block
+	&__aside
+		width: 100%
+		text-align: left
+		max-width: 25%
+		float: left
+		vertical-align: top
+		display: inline-block
+		padding-right: 30px
+		+clr
+		p
+			text-transform: uppercase
+			+font-family($os-bld)
+		a
+			font-size: $text-sm //14px
+			display: inline-block
+			color: $blue
+			float: right
+			text-decoration: underline
+			cursor: pointer
+		.btn
+			margin-top: 38px
+		&--solo
+			.btn
+				margin-bottom: 30px
+			p
+				display: block
+				text-transform: none
+	&__content
+		float: right
+		max-width: 75%
 .bg-overlay
 	position: absolute
 	width: 100%
