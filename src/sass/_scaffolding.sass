@@ -1,14 +1,59 @@
 //Scaffolding
 body
 	background-color: $body-bg
-	+font-family($roboto-light)
+	+font-family($os-reg)
 	line-height: $line-height-base
 	font-size: $text-reg //16px
+	color: $text
 
+// Grids & Layout
+.inner
+	+clr
+	position: relative
+	padding: 0 30px
 section
 	+clr
 	display: inline-block
 	width: 100%
+// Titles
+.title
+	&__in
+		padding: 30px
+		+clr
+	&__shaped
+		padding: 20px 30px 30px
+		background-color: $white-theme
+		border-top: 2px solid $border-light
+		border-bottom: 2px solid $border-light
+		position: relative
+		margin-bottom: 50px
+		&:after
+			left: 50%
+			top: 50px
+			-webkit-transform: translateX(-50%)
+			-moz-transform: translateX(-50%)
+			-ms-transform: translateX(-50%)
+			-o-transform: translateX(-50%)
+			transform: translateX(-50%)
+			content: ''
+			display: block
+			position: absolute
+			background-image: url("../img/btn-down.png")
+			width: 58px
+			height: 56px
+			+cover
+	&__text
+		display: inline-block
+	.btn
+		float: right
+		&-yellow
+			margin-right: 10px
+
+
+.lorem
+	padding-bottom: 50px
+	border-bottom: 2px solid $border-light
+	font-size: 0
 
 .bg-overlay
 	position: absolute
@@ -37,6 +82,13 @@ section
 			background-color: rgba($white, .80)
 			+cover
 
+// Text: Align
+.text-center
+	text-align: center
+.text-left
+	text-align: left
+.text-right
+	text-align: right
 .text-lead
 	font-size: $text-lg //30px
 	text-transform: uppercase
@@ -44,7 +96,6 @@ section
 .text-md
 	font-size: $text-md //20px
 	line-height: 1.2 //24px
-	+font-family($roboto-reg)
 
 .text-sm
 	font-size: $text-sm //14px

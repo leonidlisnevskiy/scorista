@@ -6,5 +6,223 @@ mainClasses: main
 
 {% block content %}
 
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure assumenda quae, nobis eaque, cupiditate modi, mollitia adipisci qui animi similique quas in unde rem ipsum! Molestias illum a ipsa sapiente?</p>
+
+{% include "partials/components/_title.html" %}
+
+<ul class="breadcrumbs">
+	<li><a href="/" class="is-current">Займы</a></li>
+	<li>Кредитное решение agrid512ff4536385</li>
+</ul>
+<!-- END breadcrumbs -->
+
+<div class="title title__shaped text-center">
+	<h4 class="title__text">Кредитная история</h4>
+</div>
+
+<div class="inner">
+	<div class="lorem">
+		<div class="grid grid-double-spacing">
+			<div class="grid-3-col">
+				<div class="grid__item">
+					<div class="card">
+						<div class="card__in">
+							<p>Просроченные или активные займы в Вашем или других МФО</p>
+						</div>
+
+						<div class="card__status card__status--done">
+							<div class="icon-centered"><i class="icon-done"></i></div>
+							<p>прошел проверку</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="grid__item">
+					<div class="card">
+						<div class="card__in">
+							<p>Преобладание неактивных незакрытых кредитов</p>
+						</div>
+
+						<div class="card__status card__status--done">
+							<div class="icon-centered"><i class="icon-done"></i></div>
+							<p>прошел проверку</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="grid__item">
+					<div class="card">
+						<div class="card__in">
+							<p>Несовпадение ФИО и паспорта заемщика с  официальными данными</p>
+						</div>
+
+						<div class="card__status card__status--done">
+							<div class="icon-centered"><i class="icon-done"></i></div>
+							<p>прошел проверку</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="grid__item">
+					<div class="card">
+						<div class="card__in">
+							<p>Негативные факторы кредитной истории</p>
+						</div>
+
+						<div class="card__status card__status--done">
+							<div class="icon-centered"><i class="icon-done"></i></div>
+							<p>прошел проверку</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="grid__item">
+					<div class="card">
+						<div class="card__in">
+							<p>Высокая доля кредитов с текущей просрочкой</p>
+						</div>
+
+						<div class="card__status card__status--done">
+							<div class="icon-centered"><i class="icon-done"></i></div>
+							<p>прошел проверку</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="grid__item">
+					<div class="card">
+						<div class="card__in">
+							<p>Недельствительность паспорта по сроку действия</p>
+						</div>
+
+						<div class="card__status card__status--done">
+							<div class="icon-centered"><i class="icon-done"></i></div>
+							<p>прошел проверку</p>
+						</div>
+					</div>
+				</div>
+				<!-- END done cards -->
+
+				<div class="grid__item">
+					<div class="card">
+						<div class="card__in">
+							<p>Всего один неактивный незакрытый кредит</p>
+						</div>
+
+						<div class="card__status card__status--disable">
+							<div class="icon-centered"><i class="icon-disabled"></i></div>
+							<p>непро-верялся</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="grid__item">
+					<div class="card">
+						<div class="card__in">
+							<p>Номер сотового телефона в кредитной истории не найден</p>
+						</div>
+
+						<div class="card__status card__status--disable">
+							<div class="icon-centered"><i class="icon-disabled"></i></div>
+							<p>непро-верялся</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="grid__item">
+					<div class="card">
+						<div class="card__in">
+							<p>Заёмщик в черном списке Скористы</p>
+						</div>
+
+						<div class="card__status card__status--disable">
+							<div class="icon-centered"><i class="icon-disabled"></i></div>
+							<p>непро-верялся</p>
+						</div>
+					</div>
+				</div>
+				<!-- END disabled cards -->
+
+				<div class="grid__item">
+					<div class="card">
+						<div class="card__in">
+							<p>Все текущие кредиты на просрочке</p>
+						</div>
+
+						<div class="card__status card__status--warning">
+							<div class="icon-centered"><i class="icon-warning"></i></div>
+							<p>причина отказа</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="grid__item">
+					<div class="card">
+						<div class="card__in">
+							<p>Негатив по ФССП</p>
+						</div>
+
+						<div class="card__status card__status--warning">
+							<div class="icon-centered"><i class="icon-warning"></i></div>
+							<p>причина отказа</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="grid__item">
+					<div class="card">
+						<div class="card__in">
+							<p>Высокий уровень мошенничества по указанным реквизитам получения займа</p>
+						</div>
+
+						<div class="card__status card__status--warning">
+							<div class="icon-centered"><i class="icon-warning"></i></div>
+							<p>причина отказа</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="grid__item">
+					<div class="card">
+						<div class="card__in">
+							<p>Подозрение на кибермошенничество</p>
+						</div>
+
+						<div class="card__status card__status--warning">
+							<div class="icon-centered"><i class="icon-warning"></i></div>
+							<p>причина отказа</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="grid__item">
+					<div class="card">
+						<div class="card__in">
+							<p>Подозрение на умысел частичной оплаты</p>
+						</div>
+
+						<div class="card__status card__status--warning">
+							<div class="icon-centered"><i class="icon-warning"></i></div>
+							<p>причина отказа</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="grid__item">
+					<div class="card">
+						<div class="card__in">
+							<p>Телефон работодателя в черном списке Скористы</p>
+						</div>
+
+						<div class="card__status card__status--warning">
+							<div class="icon-centered"><i class="icon-warning"></i></div>
+							<p>причина отказа</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- END warning cards -->
+		</div>
+	</div>
+</div>
+
 {% endblock %}

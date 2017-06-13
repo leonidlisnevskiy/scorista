@@ -2,13 +2,14 @@ console.log('common');
 
 
 $(document).ready(function() {
+
+
 	//custom scrollbar
 	$(".nano").nanoScroller({
 		stop: false,
-		flash: true,
-		flashDelay: 2500,
+		flash: false,
 		iOSNativeScrolling: true,
-		alwaysVisible: true
+		alwaysVisible: false
 	});
 
 	//animate scroll

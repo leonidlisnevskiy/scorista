@@ -1,0 +1,44 @@
+.menu
+	&__link
+		+clr
+		color: $menu-link
+		text-decoration: none
+		padding: 15px 20px
+		display: block
+		position: relative
+		text-align: left
+		font-size: $text-sm //14px
+		overflow: hidden
+		&:before
+			position: absolute
+			display: block
+			height: 100%
+			width: 4px
+			content: ""
+			opacity: 0
+			top: 0
+			left: 0
+			-webkit-transform: translateX(-10px)
+			-moz-transform: translateX(-10px)
+			-ms-transform: translateX(-10px)
+			-o-transform: translateX(-10px)
+			transform: translateX(-10px)
+			-webkit-transition: all .32s ease-in-out
+			-moz-transition: all .32s ease-in-out
+			-ms-transition: all .32s ease-in-out
+			-o-transition: all .32s ease-in-out
+			transition: all .32s ease-in-out
+			background-color: $link-green
+		&:hover
+			background-color: #2f3949
+			&:before
+				-webkit-transform: translateX(0)
+				-moz-transform: translateX(0)
+				-ms-transform: translateX(0)
+				-o-transform: translateX(0)
+				transform: translateX(0)
+				opacity: 1
+		.menu__icon
+			float: left
+			width: 20px
+			margin-right: 20px

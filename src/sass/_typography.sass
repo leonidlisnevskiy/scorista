@@ -1,25 +1,38 @@
 // Typography
-+font("roboto-bold", roboto-bold)
-+font("roboto-medium", roboto-medium)
-+font("roboto-regular", roboto-regular)
-+font("roboto-light", roboto-light)
-+font("roboto-thin", roboto-thin)
++font("opensans-regular", opensans-regular)
++font("opensans-light", opensans-light)
++font("opensans-bold", opensans-bold)
 
-$roboto-bld:		 "roboto-bold"
-$roboto-md:		 "roboto-medium"
-$roboto-reg:		 "roboto-regular"
-$roboto-light:		 "roboto-light"
-$roboto-thin:		 "roboto-thin"
+$os-reg:		 "opensans-regular"
+$os-light:		 "opensans-light"
+$os-bld:		 "opensans-bold"
 
 // Text
 p
+	color: $text
 	font-size: $text-reg //16px
 	line-height: $line-height-base
 	> a
 		color: $blue
 		text-decoration: underline
-	> span
-		color: $pink
 
+// Links
+a
+	-webkit-transition: all .24s ease-in-out
+	-moz-transition: all .24s ease-in-out
+	-ms-transition: all .24s ease-in-out
+	-o-transition: all .24s ease-in-out
+	transition: all .24s ease-in-out
+	cursor: pointer
 // Headings
-// h1, h2, h3, h4, h5, h6
+h1, h2, h3, h4, h5, h6
+	+font-family($os-reg)
+	color: $text
+	line-height: 1
+
+h2
+	font-size: $text-lg
+h3
+	font-size: $text-md
+h4
+	font-size: $text-reg

@@ -1,14 +1,19 @@
 {% import "helpers/_mixins.html" as mixins %}
-
+<!-- {% import "partials/components/_aside.html" as aside %} -->
 <!doctype html>
 <html>
 {% include "layouts/_head.html" %}
 
 <body class="{{bodyClasses}}">
 
+	{% include "partials/components/_aside.html" %}
+	{% include "partials/components/_panel.html" %}
+
 	<!-- BEGIN content -->
 	<main class="{{mainClasses}}">
-		{% block content %}{% endblock %}
+		{% block content %}
+
+		{% endblock %}
 	</main>
 	<!-- END content -->
 
