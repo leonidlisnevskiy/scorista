@@ -1,10 +1,20 @@
 console.log('common');
 
+$body = $("body");
+$window = $(window);
+
+$window.scroll(function() {
+	if ( $window.scrollTop() > 0) {
+		$body.addClass("is-fixed");
+	} else{
+		$body.removeClass("is-fixed");
+	}
+});
 
 $(document).ready(function() {
 
 	$(".js-btn-nav").click(function() {
-		$("body").toggleClass("is-open");
+		$body.toggleClass("is-open");
 	});
 
 	$('#js-status-good').LineProgressbar({

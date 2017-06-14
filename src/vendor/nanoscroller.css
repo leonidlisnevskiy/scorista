@@ -20,7 +20,7 @@
 
 .nano > .nano-pane {
   position   : absolute;
-  width      : 4px;
+  width      : 6px;
   background: #282d3b;
   right      : 0;
   top        : 0;
@@ -35,6 +35,7 @@
 .nano > .nano-pane > .nano-slider {
   background : #adb6c3;
   position              : relative;
+  cursor: pointer;
   margin                : 0;}
 
 .nano:hover > .nano-pane, .nano-pane.active, .nano-pane.flashed {

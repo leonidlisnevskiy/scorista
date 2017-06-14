@@ -19,6 +19,17 @@
 .user__field
 	&-ava
 		font-size: 0
-		margin-bottom: 18px
+		margin: 0 auto 18px
+		overflow: hidden
+		background-image: url("../img/user-pic.png")
+		height: 80px
+		width: 80px
+		+cover
+		will-change: transition, width, height
+		transition: all .24s ease-in-out
+		&.is-active
+			background-image: url("../img/user-ava.png")
+			img
+				display: none
 
 

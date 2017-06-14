@@ -7,17 +7,26 @@ body
 	color: $text
 	&.is-open
 		main
-			padding-left: 0
+			padding-left: 80px
 		.sidebar
-			transform: translateX(-100%)
-			-webkit-transform: translateX(-100%)
-			-moz-transform: translateX(-100%)
-			-ms-transform: translateX(-100%)
-			-o-transform: translateX(-100%)
+			max-width: 80px
 		.icon-btn-nav:after
 			opacity: 0
 		.icon-btn-nav:before
 			opacity: 1
+		.sidebar__field .menu__link
+			color: transparent
+			font-size: 0
+			text-align: center
+			width: 80px
+		.menu__link .menu__icon
+			display: inline-block
+			margin-right: 0
+			float: none
+		.user__field
+			&-ava
+				height: 50px
+				width: 50px
 // Grids & Layout
 .inner
 	+clr
