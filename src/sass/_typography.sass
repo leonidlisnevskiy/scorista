@@ -11,13 +11,17 @@ $os-bld:		 "opensans-bold"
 p
 	color: $text
 	font-size: $text-reg //16px
+	+clr
 	line-height: $line-height-base
 	> a
 		color: $blue
 		text-decoration: underline
 	> span
 		+font-family($os-bld)
-
+	> i
+		display: inline-block
+		vertical-align: middle
+		margin-right: 10px
 // Links
 a
 	-webkit-transition: all .24s ease-in-out

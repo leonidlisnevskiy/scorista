@@ -5,12 +5,26 @@ body
 	line-height: $line-height-base
 	font-size: $text-reg //16px
 	color: $text
-
+	&.is-open
+		main
+			padding-left: 0
+		.sidebar
+			transform: translateX(-100%)
+			-webkit-transform: translateX(-100%)
+			-moz-transform: translateX(-100%)
+			-ms-transform: translateX(-100%)
+			-o-transform: translateX(-100%)
+		.icon-btn-nav:after
+			opacity: 0
+		.icon-btn-nav:before
+			opacity: 1
 // Grids & Layout
 .inner
 	+clr
 	position: relative
 	padding: 0 30px
+	&__in
+		padding: 30px 0
 section
 	+clr
 	display: inline-block
@@ -19,18 +33,19 @@ section
 .content
 	padding-top: 50px
 	font-size: 0
-	.col-left
-		width: 30%
-		padding: 0 18px
-		float: left
-		margin-right: 60px
-		text-align: center
-		.list-dotted
-			margin-top: 80px
-	.col-right
-		display: inline-block
-		width: 64%
-		vertical-align: top
+
+.col-left
+	width: 30%
+	padding: 0 18px
+	float: left
+	margin-right: 60px
+	text-align: center
+	.list-dotted
+		margin-top: 80px
+.col-right
+	display: inline-block
+	width: 64%
+	vertical-align: top
 
 // Text: Align
 .text-center
@@ -80,10 +95,16 @@ section
 			+cover
 	&__text
 		display: inline-block
+	&__text-box
+		padding: 15px 10px
+		background-color: $white-theme
+		border: 2px solid $border-light
+		border-radius: 2px
 	.btn
 		float: right
 		&-yellow
 			margin-right: 10px
+
 
 .field
 	padding: 50px 0

@@ -7,10 +7,10 @@
 <body class="{{bodyClasses}}">
 
 	{% include "partials/components/_aside.html" %}
-	{% include "partials/components/_panel.html" %}
 
 	<!-- BEGIN content -->
 	<main class="{{mainClasses}}">
+		{% include "partials/components/_panel.html" %}
 		{% block content %}
 
 		{% endblock %}

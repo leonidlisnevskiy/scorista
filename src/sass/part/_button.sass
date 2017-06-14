@@ -38,11 +38,20 @@
 		border-right: 1px solid $border
 		&:hover
 			i:after
+				transform: translate(-2px, -50%)
+				-webkit-transform: translate(-2px, -50%)
+				-moz-transform: translate(-2px, -50%)
+				-ms-transform: translate(-2px, -50%)
+				-o-transform: translate(-2px, -50%)
+			i:before
 				transform: translate(2px, -50%)
 				-webkit-transform: translate(2px, -50%)
 				-moz-transform: translate(2px, -50%)
 				-ms-transform: translate(2px, -50%)
 				-o-transform: translate(2px, -50%)
+			i:before, i:after
+				border-right-color: #8b929c
+				border-left-color: #8b929c
 		i
 			position: relative
 		i:after
@@ -56,12 +65,22 @@
 			-ms-transform: translate(0, -50%)
 			-o-transform: translate(0, -50%)
 			transform: translate(0, -50%)
-			-webkit-transition: all .24s ease-in-out
-			-moz-transition: all .24s ease-in-out
-			-ms-transition: all .24s ease-in-out
-			-o-transition: all .24s ease-in-out
 			transition: all .24s ease-in-out
 			position: absolute
+		i:before
+			+arr(5, 10, $link-green, r)
+			content: ''
+			display: block
+			right: -10px
+			top: 50%
+			-webkit-transform: translate(0, -50%)
+			-moz-transform: translate(0, -50%)
+			-ms-transform: translate(0, -50%)
+			-o-transform: translate(0, -50%)
+			transform: translate(0, -50%)
+			transition: all .24s ease-in-out
+			position: absolute
+			opacity: 0
 
 	&.btn-yellow
 		background-color: $yellow

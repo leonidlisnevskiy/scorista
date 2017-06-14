@@ -8,7 +8,9 @@ console.log('common');
 
 $(document).ready(function() {
 
-
+	$(".js-btn-nav").click(function() {
+		$("body").toggleClass("is-open");
+	});
 
 	$('#js-status-good').LineProgressbar({
 		percentage:30,
