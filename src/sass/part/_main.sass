@@ -8,7 +8,58 @@ main
 	transition: all .24s ease-in-out
 	.inner
 		padding: 0 30px
+		&__in
+			.col-right
+				width: 70%
+			.col-left
+				width: 30%
+				padding: 0
+				margin-right: 0
+				padding-right: 30px
+.bla
+	display: inline-block
+	max-width: 150px
+	width: 100%
+	padding: 15px 0
+	vertical-align: top
 
+.table-wrapper
+	display: inline-block
+	width: 100%
+	vertical-align: top
+	table tr td
+		padding: 0 10px 10px 0
+	table tr td p
+		font-size: $text-sm //14px
+		+font-family($os-reg)
+		&.status
+			padding: 10px 5px
+			text-align: center
+		&.status-bad
+			background-color: #fc8085
+			color: #961419
+		&.status-good
+			background-color: rgba($green, .398)
+			color: darken($green, 15)
+		&.status-warning
+			background-color: #f9b97d
+			color: #d56600
+		&.status-info
+			background-color: #a1c2e9
+			color: #4384cf
+		&.status-fameless
+			background-color: $yellow
+			color: #9f8710
+		&.is-current
+			position: relative
+			&:after
+				content: ''
+				display: block
+				position: absolute
+				top: 50%
+				transform: translateY(-50%)
+				right: calc(100% + 10px)
+				+sprite($s-icon-arrow-right-circle)
 .forecast
 	font-size: 0
 	.grid__item
@@ -16,8 +67,9 @@ main
 
 
 .counter
+	width: 100%
+	font-size: 0
 	&__title
-		padding-right: 20px
 		display: inline-block
 		font-size: $text-sm //14px
 		line-height: 1.42
@@ -73,11 +125,32 @@ main
 
 .user
 	margin-bottom: 50px
+	display: inline-block
+	vertical-align: top
+	width: 100%
+	margin-right: 20px
+	max-width: 300px
+	+clr
 	&-info
 		padding: 35px 0 45px 0
 		p
 			margin-bottom: 10px
 		p a
 			margin-right: 10px
-	.btn-green
-		margin-right: 15px
+	.btn-blue
+		float: right
+	&__field
+		&-ava
+			font-size: 0
+			margin: 0 auto 18px
+			overflow: hidden
+			background-image: url("../img/user-pic.png")
+			height: 80px
+			width: 80px
+			+cover
+			will-change: transition, width, height
+			transition: all .24s ease-in-out
+			&.is-active
+				background-image: url("../img/user-ava.png")
+				img
+					display: none

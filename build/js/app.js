@@ -18,6 +18,7 @@ $window.scroll(function() {
 
 $(document).ready(function() {
 
+
 	$(".js-btn-nav").click(function() {
 		$body.toggleClass("is-open");
 	});
@@ -103,7 +104,7 @@ $(document).ready(function() {
 
 
 	// transparent input, etx
-	$('input').each(function(){
+	$('input[type=text]').each(function(){
 		var placeholder = $(this).attr('placeholder');
 
 		$(this).focus(function(){

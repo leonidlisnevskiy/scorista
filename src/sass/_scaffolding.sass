@@ -20,9 +20,10 @@ body
 			text-align: center
 			width: 80px
 		.menu__link .menu__icon
-			display: inline-block
-			margin-right: 0
+			margin: 0 auto
 			float: none
+			i
+				margin: 0 auto
 		.user__field
 			&-ava
 				height: 50px
@@ -39,6 +40,8 @@ section
 	display: inline-block
 	width: 100%
 
+ul li
+	+clr
 .content
 	padding-top: 50px
 	font-size: 0
@@ -87,33 +90,124 @@ section
 		border-top: 2px solid $border-light
 		border-bottom: 2px solid $border-light
 		position: relative
-		&:after
-			left: 50%
-			top: 50px
-			-webkit-transform: translateX(-50%)
-			-moz-transform: translateX(-50%)
-			-ms-transform: translateX(-50%)
-			-o-transform: translateX(-50%)
-			transform: translateX(-50%)
-			content: ''
-			display: block
+		.image-centered
 			position: absolute
-			background-image: url("../img/btn-down.png")
-			width: 58px
-			height: 56px
-			+cover
+			display: block
+			cursor: pointer
+			text-decoration: none
+			z-index: 9999
+			top: 65%
+			left: 50%
+			transform: translateX(-50%)
 	&__text
 		display: inline-block
 	&__text-box
-		padding: 15px 10px
+		padding: 17px 5px 10px 15px
 		background-color: $white-theme
 		border: 2px solid $border-light
 		border-radius: 2px
+		+clr
+		i
+			float: right
+		p
+			display: inline-block
+			font-size: $text-sm //14px
+			vertical-align: top
+		ul li
+			p
+				font-size: $text-sm //14px
+				+r(1365)
+					font-size: 12px
 	.btn
 		float: right
 		&-yellow
 			margin-right: 10px
 
+// Panel
+.panel
+	&__info
+		margin-bottom: 30px
+		p
+			font-size: $text-sm //14px
+	&__recommended
+		margin-bottom: 16px
+
+.petition
+	padding: 20px 10px
+	text-align: center
+	margin-bottom: 20px
+	&--good
+		background-color: $green
+		p
+			color: $white
+			font-size: 20px
+			+font-family($os-bld)
+
+.circle-pulsar
+	position: relative
+	width: 85px
+	height: 85px
+	display: inline-block
+	line-height: 85px
+	text-align: center
+	vertical-align: middle
+	margin-top: 25px
+	&:after, &:before
+		content: ""
+		display: block
+		border-radius: 50%
+		position: absolute
+		will-change: box-shadow
+		transition: all .24s ease-in-out
+	&:after
+		animation: stretch 1s ease-out 0.220ms alternate infinite none running
+		-webkit-animation: stretch 1s ease-out 0.220ms alternate infinite none running
+		top: 0
+		width: 100%
+		height: 100%
+		background-color: $yellow
+		margin: 0 auto
+		z-index: 1
+		top: 50%
+		left: 50%
+		transform: translate(-50%, -50%)
+		width: 115px
+		box-shadow: 0 0 0 30px $white, 0 0 0 40px $yellow
+		height: 115px
+	&:before
+		animation: stretch 1s ease-out 0s alternate infinite none running
+		box-shadow: 0 0 0 10px $white, 0 0 0 20px $yellow
+		height: 100%
+		width: 100%
+		z-index: 2
+	p
+		font-size: 36px
+		color: $text
+		display: inline-block
+		position: relative
+		line-height: 1
+		vertical-align: middle
+		z-index: 9999
+		+font-family($os-bld)
+
+// animations
+@keyframes stretch
+	0%
+		box-shadow: 0 0 0 10px $yellow, 0 0 0 10px $white
+	100%
+		box-shadow: 0 0 0 10px $white, 0 0 0 10px $yellow
+
+@-webkit-keyframes stretch
+	0%
+		box-shadow: 0 0 0 10px $yellow, 0 0 0 10px $white
+	100%
+		box-shadow: 0 0 0 10px $white, 0 0 0 10px $yellow
+
+@-moz-keyframes stretch
+	0%
+		box-shadow: 0 0 0 10px $yellow, 0 0 0 10px $white
+	100%
+		box-shadow: 0 0 0 10px $white, 0 0 0 10px $yellow
 
 .field
 	padding: 50px 0
