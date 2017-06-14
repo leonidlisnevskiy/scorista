@@ -6,3 +6,64 @@ main
 	vertical-align: top
 	.inner
 		padding: 0 30px
+
+.forecast
+	font-size: 0
+	.grid__item
+		padding-bottom: 0
+
+
+.counter
+	&__title
+		padding-right: 20px
+		display: inline-block
+		font-size: $text-sm //14px
+		line-height: 1.42
+		+font-family($os-bld)
+	&__field
+		display: inline-block
+		width: 100%
+		vertical-align: top
+		background-color: $white-theme
+	&__item
+		margin-bottom: 12px
+		position: relative
+		p
+			text-align: right
+			display: inline-block
+			+font-family($os-bld)
+			line-height: 1
+			position: relative
+			z-index: 9999
+			position: absolute
+			top: 14px
+			left: 15px
+		.proggressbar
+			text-align: center
+			position: relative
+		.percentCount
+			color: $text
+			position: absolute
+			top: 15px
+			line-height: 1
+			right: 11px
+			font-size: 16px
+		.proggress
+			font-size: 16px
+			position: relative
+			&:after
+				content: ""
+				display: block
+				position: absolute
+				top: -1px
+				right: 0
+				height: 42px
+				width: 2px
+				background-color: inherit
+				border-right: 0.5px solid lighten($border, 10)
+		+clr
+	.counters
+		display: inline-block
+		width: 100%
+		max-width: 220px
+		float: right

@@ -33,6 +33,7 @@ table { border-collapse: collapse; border-spacing: 0; }
 @font-face { font-family: "opensans-bold"; src: url("../fonts/opensans-bold.eot"); src: url("../fonts/opensans-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/opensans-bold.woff2") format("woff2"), url("../fonts/opensans-bold.woff") format("woff"), url("../fonts/opensans-bold.ttf") format("truetype"); font-weight: normal; font-style: normal; }
 p { color: #3b3d44; font-size: 16px; line-height: 1.57; }
 p > a { color: #3a6ca7; text-decoration: underline; }
+p > span { font-family: "opensans-bold", Arial, sans-serif; }
 
 a { transition: all 0.24s ease-in-out; cursor: pointer; }
 
@@ -173,7 +174,7 @@ section:after { content: ""; display: table; clear: both; }
 .content { padding-top: 50px; font-size: 0; }
 .content .col-left { width: 30%; padding: 0 18px; float: left; margin-right: 60px; text-align: center; }
 .content .col-left .list-dotted { margin-top: 80px; }
-.content .col-right { display: inline-block; width: 65%; vertical-align: top; }
+.content .col-right { display: inline-block; width: 64%; vertical-align: top; }
 
 .text-center { text-align: center; }
 
@@ -186,6 +187,8 @@ section:after { content: ""; display: table; clear: both; }
 .text-md { font-size: 18px; line-height: 1.2; }
 
 .text-sm { font-size: 14px; }
+
+.border-bottom { padding-bottom: 35px; border-bottom: 2px solid #dadbe0; margin-bottom: 35px; }
 
 .title__in { padding: 30px; }
 .title__in:after { content: ""; display: table; clear: both; }
@@ -288,6 +291,20 @@ section:after { content: ""; display: table; clear: both; }
 main { width: 100%; padding-left: 200px; display: inline-block; vertical-align: top; }
 main:after { content: ""; display: table; clear: both; }
 main .inner { padding: 0 30px; }
+
+.forecast { font-size: 0; }
+.forecast .grid__item { padding-bottom: 0; }
+
+.counter__title { padding-right: 20px; display: inline-block; font-size: 14px; line-height: 1.42; font-family: "opensans-bold", Arial, sans-serif; }
+.counter__field { display: inline-block; width: 100%; vertical-align: top; background-color: #eeeff3; }
+.counter__item { margin-bottom: 12px; position: relative; }
+.counter__item p { text-align: right; display: inline-block; font-family: "opensans-bold", Arial, sans-serif; line-height: 1; position: relative; z-index: 9999; position: absolute; top: 14px; left: 15px; }
+.counter__item .proggressbar { text-align: center; position: relative; }
+.counter__item .percentCount { color: #3b3d44; position: absolute; top: 15px; line-height: 1; right: 11px; font-size: 16px; }
+.counter__item .proggress { font-size: 16px; position: relative; }
+.counter__item .proggress:after { content: ""; display: block; position: absolute; top: -1px; right: 0; height: 42px; width: 2px; background-color: inherit; border-right: 0.5px solid white; }
+.counter__item:after { content: ""; display: table; clear: both; }
+.counter .counters { display: inline-block; width: 100%; max-width: 220px; float: right; }
 
 .card { border: 1px solid #eeeff3; display: inline-block; width: 100%; min-height: 115px; border-radius: 2px; font-size: 0; position: relative; }
 .card:after { content: ""; display: table; clear: both; }

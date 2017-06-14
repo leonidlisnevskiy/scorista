@@ -4,6 +4,49 @@ console.log('common');
 $(document).ready(function() {
 
 
+
+	$('#js-status-good').LineProgressbar({
+		percentage:30,
+		radius: '0',
+		height: '40px',
+		fillBackgroundColor: 'rgba(68,171,65,.4)'
+	});
+
+	$('#js-status-good2').LineProgressbar({
+		percentage:30,
+		radius: '0',
+		height: '40px',
+		fillBackgroundColor: 'rgba(68,171,65,.4)'
+	});
+
+	$('#js-status-fameless').LineProgressbar({
+		percentage:50,
+		radius: '0',
+		height: '40px',
+		fillBackgroundColor: '#fed818'
+	});
+
+	$('#js-status-fameless2').LineProgressbar({
+		percentage:50,
+		radius: '0',
+		height: '40px',
+		fillBackgroundColor: '#fed818'
+	});
+
+	$('#js-status-bad').LineProgressbar({
+		percentage:20,
+		radius: '0',
+		height: '40px',
+		fillBackgroundColor: '#fc8085'
+	});
+
+	$('#js-status-bad2').LineProgressbar({
+		percentage:20,
+		radius: '0',
+		height: '40px',
+		fillBackgroundColor: '#fc8085'
+	});
+
 	//custom scrollbar
 	$(".nano").nanoScroller({
 		stop: false,
