@@ -15,6 +15,39 @@ section
 	+clr
 	display: inline-block
 	width: 100%
+
+.content
+	padding-top: 50px
+	font-size: 0
+	.col-left
+		width: 30%
+		padding: 0 18px
+		float: left
+		margin-right: 60px
+		text-align: center
+		.list-dotted
+			margin-top: 80px
+	.col-right
+		display: inline-block
+		width: 65%
+		vertical-align: top
+
+// Text: Align
+.text-center
+	text-align: center
+.text-left
+	text-align: left
+.text-right
+	text-align: right
+.text-lead
+	font-size: $text-lg //30px
+	text-transform: uppercase
+.text-md
+	font-size: $text-md //20px
+	line-height: 1.2 //24px
+.text-sm
+	font-size: $text-sm //14px
+
 // Titles
 .title
 	&__in
@@ -48,7 +81,6 @@ section
 		&-yellow
 			margin-right: 10px
 
-
 .field
 	padding: 50px 0
 	border-bottom: 2px solid $border-light
@@ -80,6 +112,7 @@ section
 			cursor: pointer
 		.btn
 			margin-top: 38px
+			display: block
 		&--solo
 			.btn
 				margin-bottom: 30px
@@ -89,6 +122,8 @@ section
 	&__content
 		float: right
 		max-width: 75%
+
+// bg-variants
 .bg-overlay
 	position: absolute
 	width: 100%
@@ -115,21 +150,3 @@ section
 		&:before
 			background-color: rgba($white, .80)
 			+cover
-
-// Text: Align
-.text-center
-	text-align: center
-.text-left
-	text-align: left
-.text-right
-	text-align: right
-.text-lead
-	font-size: $text-lg //30px
-	text-transform: uppercase
-
-.text-md
-	font-size: $text-md //20px
-	line-height: 1.2 //24px
-
-.text-sm
-	font-size: $text-sm //14px
