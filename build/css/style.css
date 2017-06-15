@@ -244,6 +244,8 @@ ul li:after { content: ""; display: table; clear: both; }
 .petition--good { background-color: #44ab41; }
 .petition--good p { color: #fff; font-size: 20px; font-family: "opensans-bold", Arial, sans-serif; }
 
+.noUi-connect { border-radius: 0; }
+
 .circle-pulsar { position: relative; width: 85px; height: 85px; display: inline-block; line-height: 85px; text-align: center; vertical-align: middle; margin-top: 25px; }
 .circle-pulsar:after, .circle-pulsar:before { content: ""; display: block; border-radius: 50%; position: absolute; }
 .circle-pulsar:after { top: 0; width: 100%; height: 100%; background-color: #fed818; margin: 0 auto; z-index: 1; top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); transform: translate(-50%, -50%); width: 115px; height: 115px; }

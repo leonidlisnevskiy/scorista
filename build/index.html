@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="css/style.min.css">
     <!-- jQuery -->
     <link rel="stylesheet" href="css/vendor/nanoscroller.css">
+    <link rel="stylesheet" href="css/vendor/nouislider.css">
     <link rel="stylesheet" href="css/vendor/jquery.lineProgressbar.min.css"> </head>
   <body class="">
     <aside class="sidebar nano">
@@ -208,7 +209,7 @@
                     </div>
                   </div>
                   <div class="grid__item text-center">
-                    <input type="range" class="js-range" min="0" max="1000" value="280">
+                    <div id="js-range"></div>
                     <div class="circle-pulsar">
                       <p>438</p>
                     </div>
@@ -1002,6 +1003,7 @@
     </main>
     <!-- END content -->
     <!-- BEGIN scripts -->
+    <script type="text/javascript" src="js/nouislider.min.js"></script>
     <script type="text/javascript" src="js/app.js"></script>
     <script type="text/javascript" src="js/jquery.nanoscroller.min.js"></script>
     <script type="text/javascript" src="js/jquery.lineProgressbar.js"></script>

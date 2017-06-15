@@ -19,6 +19,19 @@ $window.scroll(function() {
 
 $(document).ready(function() {
 
+	var connectSlider = document.getElementById('js-range');
+
+	noUiSlider.create(connectSlider, {
+		start: 280,
+		margin: 0,
+		tooltips: [ true ],
+		connect: [true, false],
+		range: {
+			'min': 0,
+			'max': 1000
+		}
+	});
+
 	$(".js-dropdown").click(function(e) {
 		e.preventDefault();
 		$(".js-dropdown-content").toggleClass("is-open");
