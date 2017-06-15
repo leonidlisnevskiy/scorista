@@ -11,9 +11,44 @@ $window.scroll(function() {
 	}
 });
 
+$(document).click(function(event) {
+	if ($(event.target).closest(".js-popup-prevent-close").length) return;
+});
+
+window.popup = {
+	open: function() {
+		$('.js-popup').addClass('is-active');
+		$('body').addClass('is-open-modal');
+	},
+	close: function() {
+		$('.js-popup').removeClass('is-active');
+		$('body').removeClass('is-open-modal');
+	}
+};
+
+$(document).on('click', function(e) {
+	e.preventDefault();
+	if (!$('.js-popup').hasClass('is-active')) return;
+	if ($(e.target).closest('.js-popup-close-prevent').length) return;
+	if ($(e.target).closest('.js-popup-container').length) return;
+	if ($(e.target).closest('.js-popup-open').length) return;
+	$('.js-popup').removeClass('is-active');
+	$('body').removeClass('is-open-modal');
+});
+
 $(document).ready(function() {
-
-
+	function regform(){
+		popup.open();
+		$.ajax({
+			cache: false,
+			type: "POST",
+			url: "../ajax.php?page=reg_check",
+			data: "&type=form",
+			success: function(html){
+				$('#modal_body').html(html);
+			}
+		})
+	}
 	$(".js-btn-nav").click(function() {
 		$body.toggleClass("is-open");
 	});
@@ -77,36 +112,14 @@ $(document).ready(function() {
 		}, 1000);
 	});
 
-	// modal window
-	window.popup = {
-		open: function() {
-			$('.js-popup').addClass('is-active');
-			$('body').addClass('is-open-modal');
-		},
-		close: function() {
-			$('.js-popup').removeClass('is-active');
-			$('body').removeClass('is-open-modal');
-		}
-	};
 
-	$(document).on('click', function(e) {
-		if (!$('.js-popup').hasClass('is-active')) return;
-		if ($(e.target).closest('.js-popup-container').length) return;
-		if ($(e.target).closest('.js-popup-open').length) return;
-		$('.js-popup').removeClass('is-active');
-		$('body').removeClass('is-open-modal');
-	})
-
-
-	// transparent input, etx
-	$('input[type=text]').each(function(){
-		var placeholder = $(this).attr('placeholder');
-
-		$(this).focus(function(){
-			$(this).attr('placeholder', '');
-		});
-		$(this).blur(function(){
-			$(this).attr('placeholder', placeholder);
-		});
+	// map scroll disable
+	$('.map-container').click(function () {
+		$('.map-container iframe').css("pointer-events", "auto");
 	});
+
+	$( ".map-container" ).mouseleave(function() {
+		$('.map-container iframe').css("pointer-events", "none");
+	});
+
 });

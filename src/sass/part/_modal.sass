@@ -7,6 +7,9 @@
 	z-index: 9999
 	will-change: transform, opacity, transition
 	-webkit-transform: translateX(-50%)
+	-moz-transform: translateX(-50%)
+	-ms-transform: translateX(-50%)
+	-o-transform: translateX(-50%)
 	left: 50%
 	transition: all .34s linear
 	width: 100%
@@ -19,14 +22,17 @@
 		visibility: visible
 		pointer-events: auto
 	&-container
-		max-width: 460px
+		max-width: 80%
 		width: 100%
 		margin: 0 auto 20px
 		background-color: $white
-		border-radius: 4px
 		position: absolute
 		top: 15%
 		left: 50%
 		-webkit-transform: translateX(-50%)
-		+r(568)
-			max-width: 300px
+		-moz-transform: translateX(-50%)
+		-ms-transform: translateX(-50%)
+		-o-transform: translateX(-50%)
+	&__title
+		padding: 25px
+		text-align: center

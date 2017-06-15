@@ -176,17 +176,17 @@ mainClasses: main
 							<div class="counters">
 								<div class="counter__item">
 									<p>ХОРОШАЯ</p>
-									<div class="counter__field" id="js-status-good"></div>
+									<div class="counter__field status-good" id="js-status-good"></div>
 								</div>
 
 								<div class="counter__item">
 									<p>НЕИЗВЕСТНАЯ</p>
-									<div class="counter__field" id="js-status-fameless"></div>
+									<div class="counter__field status-fameless" id="js-status-fameless"></div>
 								</div>
 
 								<div class="counter__item">
 									<p>ПЛОХАЯ</p>
-									<div class="counter__field" id="js-status-bad"></div>
+									<div class="counter__field status-bad" id="js-status-bad"></div>
 								</div>
 							</div>
 						</div>
@@ -199,17 +199,17 @@ mainClasses: main
 							<div class="counters">
 								<div class="counter__item">
 									<p>ХОРОШАЯ</p>
-									<div class="counter__field" id="js-status-good2"></div>
+									<div class="counter__field status-good" id="js-status-good2"></div>
 								</div>
 
 								<div class="counter__item">
 									<p>НЕИЗВЕСТНАЯ</p>
-									<div class="counter__field" id="js-status-fameless2"></div>
+									<div class="counter__field status-fameless" id="js-status-fameless2"></div>
 								</div>
 
 								<div class="counter__item">
 									<p>ПЛОХАЯ</p>
-									<div class="counter__field" id="js-status-bad2"></div>
+									<div class="counter__field status-bad" id="js-status-bad2"></div>
 								</div>
 							</div>
 						</div>
@@ -550,7 +550,7 @@ mainClasses: main
 	<div class="field">
 		<div class="field__aside">
 			<p>ФССП</p>
-			<a href="/">Сумма долгов</a>
+			<a href="/" onclick="popup.open();" class="js-popup-open">Сумма долгов</a>
 			<button class="btn btn-orange btn-rounded btn-bld btn-md" type="button">Запросить</button>
 		</div>
 
@@ -689,6 +689,84 @@ mainClasses: main
 
 <div class="inner">
 	<div id="linked"></div>
-	<p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Точках, прямо силуэт, путь скатился напоивший города продолжил но страна подпоясал пунктуация его, реторический наш. Встретил даль инициал запятых свой, взгляд повстречался переулка последний моей злых жизни, грустный путь. Ему раз буквоград страна составитель деревни злых. Реторический большого пояс, великий коварный парадигматическая ты. Но дороге единственное гор силуэт составитель всемогущая, взгляд, языком первую от всех залетают ведущими страна безопасную путь решила о свой страну ему переулка! Рыбного пустился своего, оксмокс имени заголовок семантика, рыбными предупреждал выйти до дорогу свою свой пунктуация собрал моей но рукопись за, жизни текстами образ страну жаренные.</p>
+	<p>TEST TEXT Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, quam!</p>
+</div>
+
+<div class="popup js-popup">
+	<div class="popup-container js-popup-container">
+		<button href="/" class="js-popup-open btn btn-close" type="button" onclick="popup.close()">close</button>
+
+		<div class="map">
+			<div class="popup__title">
+				<p><span>Адрес регистрации:</span> Россия, Борзя, Забайкальский край, Савватеевская улица, д. 4, кв. 9</p>
+			</div>
+
+			<div class="map__container">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2451.99265470359!2d5.485875815791105!3d52.079863579733264!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c64fc6837347f5%3A0xca8885e6e90145a3!2zRG9ycHNzdHJhYXQgMjA3QSwgMzkyNSBLQiBTY2hlcnBlbnplZWwsINCd0LjQtNC10YDQu9Cw0L3QtNGL!5e0!3m2!1sru!2sua!4v1492717602959" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+			</div>
+		</div>
+		<!-- END map -->
+	</div>
+	<!-- END 1 modal -->
+
+	<div class="popup-container js-popup-container">
+		<button href="/" class="js-popup-open btn btn-close" type="button" onclick="popup.close()">close</button>
+		<div class="popup__title">
+			<p>Сотовый телефон:</p>
+		</div>
+		<div class="table-bordered text-center">
+			<table>
+				<thead>
+					<tr>
+						<td><p>Номер телефона</p></td>
+						<td><p>Сколько раз упоминался</p></td>
+						<td><p>Первая дата упоминания</p></td>
+						<td><p>Последняя дата упоминания</p></td>
+					</tr>
+				</thead>
+
+				<tbody>
+					<tr>
+						<td><p class="text-green">+7 (916) 383-04-32</p></td>
+						<td><p>1</p></td>
+						<td><p>02.12.2016</p></td>
+						<td><p>02.12.2016 </p></td>
+					</tr>
+					<tr>
+						<td><p>+7 (916) 383-04-32</p></td>
+						<td><p>1</p></td>
+						<td><p>02.12.2016</p></td>
+						<td><p>02.12.2016 </p></td>
+					</tr>
+					<tr>
+						<td><p>+7 (916) 383-04-32</p></td>
+						<td><p>1</p></td>
+						<td><p>02.12.2016</p></td>
+						<td><p>02.12.2016 </p></td>
+					</tr>
+					<tr>
+						<td><p>+7 (916) 383-04-32</p></td>
+						<td><p>1</p></td>
+						<td><p>02.12.2016</p></td>
+						<td><p>02.12.2016 </p></td>
+					</tr>
+					<tr>
+						<td><p>+7 (916) 383-04-32</p></td>
+						<td><p>1</p></td>
+						<td><p>02.12.2016</p></td>
+						<td><p>02.12.2016 </p></td>
+					</tr>
+					<tr>
+						<td><p>+7 (916) 383-04-32</p></td>
+						<td><p>1</p></td>
+						<td><p>02.12.2016</p></td>
+						<td><p>02.12.2016 </p></td>
+					</tr>
+				</tbody>
+			</table>
+			<button class="btn btn-rounded btn-green" type="button" onclick="popup.close();">Закрыть</button>
+		</div>
+	</div>
+	<!-- END 2 modal -->
 </div>
 {% endblock %}

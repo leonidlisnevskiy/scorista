@@ -107,3 +107,20 @@
 		padding: 0 50px
 	&.btn-md
 		padding: 0 40px
+	&-close
+		font-size: 0
+		background-image: url("../img/btn-close.png")
+		background-position: center center
+		background-repeat: no-repeat
+		height: 40px
+		border-radius: 50%
+		width: 40px
+		position: absolute
+		right: -20px
+		top: -20px
+		background-color: $dark
+		&:active
+			top: -19px
+		&:hover
+			background-color: lighten($dark, 10)
+			transform: rotate(-38deg)

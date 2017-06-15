@@ -27,6 +27,8 @@ main
 	display: inline-block
 	width: 100%
 	vertical-align: top
+	table
+		width: 100%
 	table tr td
 		padding: 0 10px 10px 0
 	table tr td p
@@ -60,6 +62,28 @@ main
 				transform: translateY(-50%)
 				right: calc(100% + 10px)
 				+sprite($s-icon-arrow-right-circle)
+.table-bordered
+	table
+		width: 100%
+		tr td p
+			text-align: center
+	thead
+		background-color: $gray
+		tr td p
+			color: $white
+			font-size: $text-reg //16px
+	tbody
+		tr:nth-child(even)
+			background-color: $white-theme
+		tr td p
+			color: $text
+			font-size: $text-reg //16px
+			padding: 20px 10px
+			&.text-green
+				color: $green
+				+font-family($os-bld)
+	.btn-green
+		margin: 40px auto
 .forecast
 	font-size: 0
 	.grid__item
@@ -79,6 +103,15 @@ main
 		width: 100%
 		vertical-align: top
 		background-color: $white-theme
+		&.status-good
+			.proggress:after
+				border-color: #81bb7f
+		&.status-bad
+			.proggress:after
+				border-color: #fd6067
+		&.status-fameless
+			.proggress:after
+				border-color: #f0cb0f
 	&__item
 		margin-bottom: 12px
 		position: relative
@@ -109,12 +142,12 @@ main
 				content: ""
 				display: block
 				position: absolute
-				top: -1px
+				top: -3px
 				right: 0
-				height: 42px
+				height: 46px
 				width: 2px
 				background-color: inherit
-				border-right: 0.5px solid lighten($border, 10)
+				border-right: 3px solid
 		+clr
 	.counters
 		display: inline-block
