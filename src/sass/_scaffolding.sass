@@ -74,10 +74,12 @@ ul li
 .text-sm
 	font-size: $text-sm //14px
 
+.margin-1x-bottom
+	margin-bottom: 35px
+
 .border-bottom
 	padding-bottom: 35px
 	border-bottom: 2px solid $border-light
-	margin-bottom: 35px
 // Titles
 .title
 	&__in
@@ -125,6 +127,7 @@ ul li
 				font-size: $text-sm
 	&__text
 		display: inline-block
+		+font-family($os-bld)
 	&__text-box
 		padding: 18px 16px 10px 12px
 		background-color: $white-theme
@@ -212,7 +215,7 @@ ul li
 		width: 115px
 		height: 115px
 	&:before
-		box-shadow: 0 0 0 10px $white, 0 0 0 20px $yellow
+		box-shadow: 0 0 0 5px $white, 0 0 0 11px $yellow, 0 0 0 17px $white, 0 0 0 23px $yellow, 0 0 0 29px $white, 0 0 0 35px $yellow
 		height: 100%
 		width: 100%
 		z-index: 2

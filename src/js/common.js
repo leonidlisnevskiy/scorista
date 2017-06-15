@@ -13,6 +13,7 @@ $window.scroll(function() {
 
 
 $(document).ready(function() {
+
 	$(".js-dropdown").click(function(e) {
 		e.preventDefault();
 		$(".js-dropdown-content").toggleClass("is-open");
