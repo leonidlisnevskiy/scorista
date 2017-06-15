@@ -13,6 +13,10 @@ $window.scroll(function() {
 
 
 $(document).ready(function() {
+	$(".js-dropdown").click(function(e) {
+		e.preventDefault();
+		$(".js-dropdown-content").toggleClass("is-open");
+	});
 
 	$(".js-open-map").click(function(e) {
 		e.preventDefault();
@@ -90,16 +94,6 @@ $(document).ready(function() {
 		alwaysVisible: false
 	});
 
-	//animate scroll
-	$('.js-scroll-to').on("click", function(e){
-		e.preventDefault();
-		var anchor = $(this);
-		$('html, body').stop().animate({
-			scrollTop: $(anchor.attr('href')).offset().top
-		}, 1000);
-	});
-
-
 	// map scroll disable
 	$('.map-container').click(function () {
 		$('.map-container iframe').css("pointer-events", "auto");
@@ -107,6 +101,12 @@ $(document).ready(function() {
 
 	$( ".map-container" ).mouseleave(function() {
 		$('.map-container iframe').css("pointer-events", "none");
+	});
+
+	$(".js-show").click(function(e){
+		e.preventDefault();
+		$(".js-hidden").toggleClass("is-visible");
+		$(".js-show-container").toggleClass("is-open");
 	});
 
 });

@@ -189,6 +189,27 @@ main
 				background-image: url("../img/user-ava.png")
 				img
 					display: none
+		a
+			font-size: $text-sm //14px
+			color: #c3cbd6
+			text-decoration: none
+			&.dropdown__caption
+				position: relative
+				padding-right: 12px
+				&:after
+					content: ""
+					display: block
+					position: absolute
+					top: 9px
+					width: 8px
+					height: 5px
+					left: 100%
+					background-image: url("../img/icons/dropdown.png")
+					background-repeat: no-repeat
+					background-position: center center
+			&:hover
+				color: $white
+
 	.title__text-box
 		padding: 0 16px 0 12px
 		p

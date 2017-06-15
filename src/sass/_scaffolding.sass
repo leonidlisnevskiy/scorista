@@ -28,6 +28,10 @@ body
 			&-ava
 				height: 50px
 				width: 50px
+		.user__field a.dropdown__caption
+			font-size: 0
+			display: none
+			opacity: 0
 // Grids & Layout
 .inner
 	+clr
@@ -42,9 +46,6 @@ section
 
 ul li
 	+clr
-.content
-	padding-top: 50px
-	font-size: 0
 
 .col-left
 	width: 30%
@@ -83,29 +84,58 @@ ul li
 		padding: 30px
 		+clr
 	&__shaped
-		padding: 20px 30px 30px
+		padding: 21px 30px 28px
 		background-color: $white-theme
 		border-top: 2px solid $border-light
 		border-bottom: 2px solid $border-light
 		position: relative
+		margin-bottom: 51px
+		&.is-open
+			.image-centered
+				img
+					transform: rotateZ(-180deg)
 		.image-centered
 			position: absolute
 			display: block
 			cursor: pointer
 			text-decoration: none
+			font-size: 0
+			border-radius: 50%
 			z-index: 9999
-			top: 65%
+			top: calc(100% - 26px)
 			left: 50%
 			transform: translateX(-50%)
+			img
+				will-change: transform
+				transition: all .24s ease-in-out
+		&-container
+			width: 100%
+			will-change: opacity, height
+			transition: all .24s ease-in-out
+			height: 0
+			visibility: hidden
+			overflow: hidden
+			opacity: 0
+			&.is-visible
+				height: 100%
+				opacity: 1
+				visibility: visible
+				overflow: visible
+			p
+				font-size: $text-sm
 	&__text
 		display: inline-block
 	&__text-box
-		padding: 23px 16px 10px 12px
+		padding: 18px 16px 10px 12px
 		background-color: $white-theme
 		border: 2px solid $border-light
 		border-radius: 2px
 		&.padding-normaly
 			padding: 23px 16px 23px 12px
+		&.box-md
+			padding: 18px 16px 50px 14px
+			p
+				line-height: 1.33
 		+clr
 		i
 			float: right

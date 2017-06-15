@@ -1,0 +1,27 @@
+.dropdown
+	&-content
+		position: absolute
+		top: 100%
+		display: inline-block
+		opacity: 0
+		height: 0
+		left: 50%
+		transform: translate(-50%, -100%)
+		width: 0
+		will-change: height
+		transition: height .24s ease-in-out, transform .30s ease-in-out
+		p
+			color: $white
+		ul
+			background-color: $white
+			padding: 10px 20px
+			border-radius: 3px
+			border: 1px solid $border
+		&.is-open
+			transform: translate(-50%, 0)
+			opacity: 1
+			height: 100%
+			z-index: 9999
+			width: auto
+	&-relative
+		position: relative
