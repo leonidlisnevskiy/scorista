@@ -50,7 +50,7 @@
             </span>Выгрузки</a>
         </div>
         <div class="sidebar__field">
-          <a href="/" title="Займ" class="menu__link">
+          <a href="/" title="Займ" class="menu__link is-current">
             <span class="menu__icon">
               <i class="icon-cash"></i>
             </span>Займ</a>
@@ -141,7 +141,7 @@
                 <p>16.07.1981 г.р.</p>
                 <p>+7 (892) 634-34-22</p>
                 <p>
-                  <a href="">Регистрация: </a>Борзя</p>
+                  <a href="/" class="js-open-map">Регистрация: </a>Борзя</p>
                 <p>
                   <a href="/">Проживание: </a>Оса</p>
               </div>
@@ -158,12 +158,14 @@
                     <div class="borrowing">
                       <p>
                         <i class="icon-analytics-dark"></i>Займ # 1455398</p>
-                      <ul>
+                      <ul class="list-normaly">
                         <li>
-                          <p>Сумма: 10 000 р.</p>
+                          <p>Сумма:
+                            <span class="text-md">10 000</span> р.</p>
                         </li>
                         <li>
-                          <p>Срок: 30 дней</p>
+                          <p>Срок:
+                            <span class="text-md">30</span> дней</p>
                         </li>
                       </ul>
                     </div>
@@ -174,20 +176,23 @@
                     </div>
                     <p class="panel__recommended">
                       <i class="icon-alert-circle-red"></i>Рекомендация:</p>
-                    <div class="title__text-box">
-                      <ul>
+                    <div class="title__text-box padding-normaly">
+                      <ul class="list-normaly">
                         <li>
-                          <p>Новая сумма: 7 500 р.</p>
+                          <p>Новая сумма:
+                            <span class="text-md">7 500</span> р.</p>
                           <i class="icon-arrow-down-red"></i>
                         </li>
                         <li>
-                          <p>Новый срок: 30 дней</p>
+                          <p>Новый срок:
+                            <span class="text-md">30</span> дней</p>
                           <i class="icon-arrow-right-gray"></i>
                         </li>
                       </ul>
                     </div>
                   </div>
                   <div class="grid__item text-center">
+                    <input type="range" class="js-slider-range" min="0" max="1000">
                     <div class="circle-pulsar">
                       <p>438</p>
                     </div>
@@ -256,7 +261,7 @@
             <div class="title__text-box">
               <p>Здесь может быть рекомендация суммы
                 <br>и требования к верификации.</p>
-              <input type="range" class="js-slider-range" min="0" max="1000"> </div>
+            </div>
           </div>
           <!-- END col-right -->
         </div>
@@ -269,223 +274,220 @@
         </a>
       </div>
       <div class="inner">
-        <div class="content">
-          <div class="col-left">
-            <button class="btn btn-orange btn-rounded btn-bld" type="button">Посмотреть КИ другого БКИ</button>
-            <ul class="list-dotted">
-              <li>
-                <p>Возраст заёмщика:</p>
-                <p class="right">45</p>
-              </li>
-              <li>
-                <p>Возраст кредитной истории:</p>
-                <p class="right">0</p>
-              </li>
-              <li>
-                <p>Время жизни сотового телефона:</p>
-                <p class="right">6</p>
-              </li>
-              <li>
-                <p>Время жизни домашнего телефона:</p>
-                <p class="right">5</p>
-              </li>
-              <li>
-                <p>Время жизни рабочего телефона:</p>
-                <p class="right">5</p>
-              </li>
-              <li>
-                <p>Время жизни регистрации:</p>
-                <p class="right">5</p>
-              </li>
-              <li>
-                <p>Время жизни прописки:</p>
-                <p class="right">5</p>
-              </li>
-            </ul>
-          </div>
-          <div class="col-right">
-            <div class="grid grid-double-spacing">
-              <div class="grid-2-col">
-                <div class="grid__item">
-                  <div class="counter">
-                    <p class="counter__title">Качество по
-                      <br>количеству:</p>
-                    <div class="counters">
-                      <div class="counter__item">
-                        <p>ХОРОШАЯ</p>
-                        <div class="counter__field status-good" id="js-status-good"></div>
-                      </div>
-                      <div class="counter__item">
-                        <p>НЕИЗВЕСТНАЯ</p>
-                        <div class="counter__field status-fameless" id="js-status-fameless"></div>
-                      </div>
-                      <div class="counter__item">
-                        <p>ПЛОХАЯ</p>
-                        <div class="counter__field status-bad" id="js-status-bad"></div>
-                      </div>
-                    </div>
+        <div class="grid grid-4x-spacing">
+          <div class="grid-3-col">
+            <div class="grid__item text-center">
+              <button class="btn btn-orange btn-rounded btn-bld" type="button" style="margin-bottom: 80px;">Посмотреть КИ другого БКИ</button>
+              <ul class="list-dotted border-bottom">
+                <li>
+                  <p>Возраст заёмщика:</p>
+                  <p class="right">45</p>
+                </li>
+                <li>
+                  <p>Возраст кредитной истории:</p>
+                  <p class="right">0</p>
+                </li>
+                <li>
+                  <p>Время жизни сотового телефона:</p>
+                  <p class="right">6</p>
+                </li>
+                <li>
+                  <p>Время жизни домашнего телефона:</p>
+                  <p class="right">5</p>
+                </li>
+                <li>
+                  <p>Время жизни рабочего телефона:</p>
+                  <p class="right">5</p>
+                </li>
+                <li>
+                  <p>Время жизни регистрации:</p>
+                  <p class="right">5</p>
+                </li>
+                <li>
+                  <p>Время жизни прописки:</p>
+                  <p class="right">5</p>
+                </li>
+              </ul>
+              <ul class="list-dotted">
+                <li>
+                  <p>
+                    <a href="/">Сотовые телефоны: </a>
+                  </p>
+                  <p class="right">2</p>
+                </li>
+                <li>
+                  <p>
+                    <a href="/">Рабочие телефоны: </a>
+                  </p>
+                  <p class="right">1</p>
+                </li>
+                <li>
+                  <p>
+                    <a href="/">Домашние телефоны: </a>
+                  </p>
+                  <p class="right">6</p>
+                </li>
+                <li>
+                  <p>
+                    <a href="/">Адреса регистрации: </a>
+                  </p>
+                  <p class="right">5</p>
+                </li>
+                <li>
+                  <p>
+                    <a href="/">Адреса прописки: </a>
+                  </p>
+                  <p class="right">2</p>
+                </li>
+              </ul>
+            </div>
+            <div class="grid__item">
+              <div class="counter">
+                <p class="counter__title">Качество по
+                  <br>количеству:</p>
+                <div class="counters">
+                  <div class="counter__item">
+                    <p>ХОРОШАЯ</p>
+                    <div class="counter__field status-good" id="js-status-good"></div>
                   </div>
-                </div>
-                <div class="grid__item">
-                  <div class="counter">
-                    <p class="counter__title">Качество по
-                      <br>сумме:</p>
-                    <div class="counters">
-                      <div class="counter__item">
-                        <p>ХОРОШАЯ</p>
-                        <div class="counter__field status-good" id="js-status-good2"></div>
-                      </div>
-                      <div class="counter__item">
-                        <p>НЕИЗВЕСТНАЯ</p>
-                        <div class="counter__field status-fameless" id="js-status-fameless2"></div>
-                      </div>
-                      <div class="counter__item">
-                        <p>ПЛОХАЯ</p>
-                        <div class="counter__field status-bad" id="js-status-bad2"></div>
-                      </div>
-                    </div>
+                  <div class="counter__item">
+                    <p>НЕИЗВЕСТНАЯ</p>
+                    <div class="counter__field status-fameless" id="js-status-fameless"></div>
+                  </div>
+                  <div class="counter__item">
+                    <p>ПЛОХАЯ</p>
+                    <div class="counter__field status-bad" id="js-status-bad"></div>
                   </div>
                 </div>
               </div>
+              <ul class="list-dotted">
+                <li>
+                  <p>Доля кредитов на просрочке
+                    <br>более 30 дней</p>
+                  <p class="right">30%</p>
+                </li>
+                <li>
+                  <p>Доля кредитов на просрочке
+                    <br>менее 30 дней</p>
+                  <p class="right">0%</p>
+                </li>
+              </ul>
+              <ul class="list-dotted">
+                <li>
+                  <p>Количество открытых
+                    <br>кредитов за 30 дней</p>
+                  <p class="right">0</p>
+                </li>
+                <li>
+                  <p>Количество закрытых
+                    <br>кредитов за 30 дней</p>
+                  <p class="right">0</p>
+                </li>
+                <li>
+                  <p>Количество запросов
+                    <br>кредитной истории за 30 дней</p>
+                  <p class="right">0</p>
+                </li>
+                <li>
+                  <p>Количество активных
+                    <br>кредитов</p>
+                  <p class="right">0</p>
+                </li>
+              </ul>
+              <ul class="list-dotted">
+                <li>
+                  <p>Количество кредитов</p>
+                  <p class="right">2</p>
+                </li>
+                <li>
+                  <p>Количество закрытых кредитов</p>
+                  <p class="right">2</p>
+                </li>
+              </ul>
             </div>
-            <div class="border-bottom">
-              <div class="grid grid-double-spacing">
-                <div class="grid-2-col">
-                  <div class="grid__item">
-                    <ul class="list-dotted">
-                      <li>
-                        <p>Доля кредитов на просрочке
-                          <br>более 30 дней</p>
-                        <p class="right">30%</p>
-                      </li>
-                      <li>
-                        <p>Доля кредитов на просрочке
-                          <br>менее 30 дней</p>
-                        <p class="right">0%</p>
-                      </li>
-                    </ul>
+            <div class="grid__item">
+              <div class="counter">
+                <p class="counter__title">Качество по
+                  <br>сумме:</p>
+                <div class="counters">
+                  <div class="counter__item">
+                    <p>ХОРОШАЯ</p>
+                    <div class="counter__field status-good" id="js-status-good2"></div>
                   </div>
-                  <div class="grid__item">
-                    <ul class="list-dotted">
-                      <li>
-                        <p>Сумма на просрочке
-                          <br>более 30 дней </p>
-                        <p class="right">3 000 р.</p>
-                      </li>
-                      <li>
-                        <p>Сумма на просрочке
-                          <br>менее 30 дней</p>
-                        <p class="right">0 р.</p>
-                      </li>
-                    </ul>
+                  <div class="counter__item">
+                    <p>НЕИЗВЕСТНАЯ</p>
+                    <div class="counter__field status-fameless" id="js-status-fameless2"></div>
+                  </div>
+                  <div class="counter__item">
+                    <p>ПЛОХАЯ</p>
+                    <div class="counter__field status-bad" id="js-status-bad2"></div>
                   </div>
                 </div>
               </div>
+              <ul class="list-dotted">
+                <li>
+                  <p>Сумма на просрочке
+                    <br>более 30 дней </p>
+                  <p class="right">3 000 р.</p>
+                </li>
+                <li>
+                  <p>Сумма на просрочке
+                    <br>менее 30 дней</p>
+                  <p class="right">0 р.</p>
+                </li>
+              </ul>
+              <ul class="list-dotted">
+                <li>
+                  <p>Сумма запросов
+                    <br>кредитной истории за 30 дней</p>
+                  <p class="right">0</p>
+                </li>
+                <li>
+                  <p>Сумма запросов
+                    <br>кредитной истории за 30 дней</p>
+                  <p class="right">0</p>
+                </li>
+                <li>
+                  <p>Сумма открытых
+                    <br>кредитов за 30 дней</p>
+                  <p class="right">0</p>
+                </li>
+                <li>
+                  <p>Остаток долга по
+                    <br>активным кредитам</p>
+                  <p class="right">35 800 р.</p>
+                </li>
+              </ul>
+              <ul class="list-dotted">
+                <li>
+                  <p>Сумма кредитов</p>
+                  <p class="right">35 800 р.</p>
+                </li>
+                <li>
+                  <p>Сумма закрытых кредитов</p>
+                  <p class="right">35 800 р.</p>
+                </li>
+              </ul>
             </div>
-            <div class="border-bottom">
-              <div class="grid grid-double-spacing">
-                <div class="grid-2-col">
-                  <div class="grid__item">
-                    <ul class="list-dotted">
-                      <li>
-                        <p>Количество открытых
-                          <br>кредитов за 30 дней</p>
-                        <p class="right">0</p>
-                      </li>
-                      <li>
-                        <p>Количество закрытых
-                          <br>кредитов за 30 дней</p>
-                        <p class="right">0</p>
-                      </li>
-                      <li>
-                        <p>Количество запросов
-                          <br>кредитной истории за 30 дней</p>
-                        <p class="right">0</p>
-                      </li>
-                      <li>
-                        <p>Количество активных
-                          <br>кредитов</p>
-                        <p class="right">0</p>
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="grid__item">
-                    <ul class="list-dotted">
-                      <li>
-                        <p>Сумма запросов
-                          <br>кредитной истории за 30 дней</p>
-                        <p class="right">0</p>
-                      </li>
-                      <li>
-                        <p>Сумма запросов
-                          <br>кредитной истории за 30 дней</p>
-                        <p class="right">0</p>
-                      </li>
-                      <li>
-                        <p>Сумма открытых
-                          <br>кредитов за 30 дней</p>
-                        <p class="right">0</p>
-                      </li>
-                      <li>
-                        <p>Остаток долга по
-                          <br>активным кредитам</p>
-                        <p class="right">35 800 р.</p>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="border-bottom">
-              <div class="grid grid-double-spacing">
-                <div class="grid-2-col">
-                  <div class="grid__item">
-                    <ul class="list-dotted">
-                      <li>
-                        <p>Количество кредитов</p>
-                        <p class="right">2</p>
-                      </li>
-                      <li>
-                        <p>Количество закрытых кредитов</p>
-                        <p class="right">2</p>
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="grid__item">
-                    <ul class="list-dotted">
-                      <li>
-                        <p>Сумма кредитов</p>
-                        <p class="right">35 800 р.</p>
-                      </li>
-                      <li>
-                        <p>Сумма закрытых кредитов</p>
-                        <p class="right">35 800 р.</p>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="forecast">
-              <div class="grid grid-double-spacing">
-                <div class="grid-2-col">
-                  <div class="grid__item">
-                    <p>Доход прогноз:
-                      <span>35 800 р.</span>
-                    </p>
-                  </div>
-                  <div class="grid__item">
-                    <p>Расход прогноз:
-                      <span>35 800 р.</span>
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- END forecast -->
           </div>
         </div>
-        <!-- END content -->
+        <div class="forecast">
+          <div class="grid grid-double-spacing">
+            <div class="grid-2-col">
+              <div class="grid__item">
+                <p>Доход прогноз:
+                  <span>35 800 р.</span>
+                </p>
+              </div>
+              <div class="grid__item">
+                <p>Расход прогноз:
+                  <span>35 800 р.</span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- END forecast -->
       </div>
       <div class="inner">
         <div class="field">
@@ -695,7 +697,7 @@
         <div class="field">
           <div class="field__aside">
             <p>ФССП</p>
-            <a href="/" onclick="popup.open();" class="js-popup-open">Сумма долгов</a>
+            <a href="/" class="js-open-table">Сумма долгов</a>
             <button class="btn btn-orange btn-rounded btn-bld btn-md" type="button">Запросить</button>
           </div>
           <div class="field__content">
@@ -834,9 +836,9 @@
         <div id="linked"></div>
         <p>TEST TEXT Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, quam!</p>
       </div>
-      <div class="popup js-popup">
-        <div class="popup-container js-popup-container">
-          <button href="/" class="js-popup-open btn btn-close" type="button" onclick="popup.close()">close</button>
+      <div class="popup js-map">
+        <div class="popup-container">
+          <button class="btn btn-close js-close-map" type="button">close</button>
           <div class="map">
             <div class="popup__title">
               <p>
@@ -849,9 +851,11 @@
           </div>
           <!-- END map -->
         </div>
-        <!-- END 1 modal -->
-        <div class="popup-container js-popup-container">
-          <button href="/" class="js-popup-open btn btn-close" type="button" onclick="popup.close()">close</button>
+      </div>
+      <!-- END 1 modal -->
+      <div class="popup js-table">
+        <div class="popup-container">
+          <button class="btn btn-close js-close-table" type="button">close</button>
           <div class="popup__title">
             <p>Сотовый телефон:</p>
           </div>
@@ -960,7 +964,7 @@
                 </tr>
               </tbody>
             </table>
-            <button class="btn btn-rounded btn-green" type="button" onclick="popup.close();">Закрыть</button>
+            <button class="btn btn-rounded btn-green js-close-table" type="button">Закрыть</button>
           </div>
         </div>
         <!-- END 2 modal -->

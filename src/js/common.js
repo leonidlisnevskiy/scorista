@@ -11,44 +11,31 @@ $window.scroll(function() {
 	}
 });
 
-$(document).click(function(event) {
-	if ($(event.target).closest(".js-popup-prevent-close").length) return;
-});
-
-window.popup = {
-	open: function() {
-		$('.js-popup').addClass('is-active');
-		$('body').addClass('is-open-modal');
-	},
-	close: function() {
-		$('.js-popup').removeClass('is-active');
-		$('body').removeClass('is-open-modal');
-	}
-};
-
-$(document).on('click', function(e) {
-	e.preventDefault();
-	if (!$('.js-popup').hasClass('is-active')) return;
-	if ($(e.target).closest('.js-popup-close-prevent').length) return;
-	if ($(e.target).closest('.js-popup-container').length) return;
-	if ($(e.target).closest('.js-popup-open').length) return;
-	$('.js-popup').removeClass('is-active');
-	$('body').removeClass('is-open-modal');
-});
 
 $(document).ready(function() {
-	function regform(){
-		popup.open();
-		$.ajax({
-			cache: false,
-			type: "POST",
-			url: "../ajax.php?page=reg_check",
-			data: "&type=form",
-			success: function(html){
-				$('#modal_body').html(html);
-			}
-		})
-	}
+
+	$(".js-open-map").click(function(e) {
+		e.preventDefault();
+		$(".js-map").toggleClass("is-active");
+	});
+
+	$(".js-close-map").click(function(e) {
+		e.preventDefault();
+		$(".js-map").removeClass("is-active");
+	});
+
+
+	$(".js-open-table").click(function(e) {
+		e.preventDefault();
+		$(".js-table").toggleClass("is-active");
+	});
+
+	$(".js-close-table").click(function(e) {
+		e.preventDefault();
+		$(".js-table").removeClass("is-active");
+	});
+
+
 	$(".js-btn-nav").click(function() {
 		$body.toggleClass("is-open");
 	});
@@ -71,14 +58,14 @@ $(document).ready(function() {
 		percentage:50,
 		radius: '0',
 		height: '40px',
-		fillBackgroundColor: '#fed818'
+		fillBackgroundColor: 'rgba(254, 216, 24, .4)'
 	});
 
 	$('#js-status-fameless2').LineProgressbar({
 		percentage:50,
 		radius: '0',
 		height: '40px',
-		fillBackgroundColor: '#fed818'
+		fillBackgroundColor: 'rgba(254, 216, 24, .4)'
 	});
 
 	$('#js-status-bad').LineProgressbar({

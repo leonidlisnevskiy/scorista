@@ -1,6 +1,7 @@
 .list
 	&-dotted
 		text-align: left
+		padding: 45px 20px
 		li
 			display: block
 			line-height: 1
@@ -26,5 +27,19 @@
 			background-color: $white
 			overflow: hidden
 			line-height: 1.27
+			a
+				line-height: .9
 			&.right
 				float: right
+	&-normaly
+		li
+			line-height: 1
+			margin-bottom: 22px
+			&:last-child
+				margin-bottom: 0
+			p
+				font-size: $text-sm //14px
+				span.text-md
+					font-weight: normal
+					font-size: $text-reg //16px
+					+font-family($os-reg)

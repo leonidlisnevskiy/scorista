@@ -35,7 +35,7 @@ main
 		font-size: $text-sm //14px
 		+font-family($os-reg)
 		&.status
-			padding: 10px 5px
+			padding: 5px
 			text-align: center
 		&.status-bad
 			background-color: #fc8085
@@ -119,21 +119,23 @@ main
 			text-align: right
 			display: inline-block
 			+font-family($os-bld)
-			line-height: 1
-			position: relative
+			line-height: 0.9
 			z-index: 9999
 			position: absolute
-			top: 14px
+			top: 50%
+			transform: translateY(-50%)
 			left: 15px
+			font-size: $text-sm //14px
 		.proggressbar
 			text-align: center
 			position: relative
 		.percentCount
 			color: $text
 			position: absolute
-			top: 15px
-			line-height: 1
+			top: 50%
+			transform: translateY(-50%)
 			right: 11px
+			line-height: 0.9
 			font-size: 16px
 		.proggress
 			font-size: 16px
@@ -187,3 +189,7 @@ main
 				background-image: url("../img/user-ava.png")
 				img
 					display: none
+	.title__text-box
+		padding: 0 16px 0 12px
+		p
+			line-height: 58px
