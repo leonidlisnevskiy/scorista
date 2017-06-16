@@ -1,0 +1,67 @@
+.table-wrapper
+	display: inline-block
+	width: 100%
+	vertical-align: top
+	table
+		width: 100%
+	table tr td
+		padding: 0 10px 10px 0
+		&:last-child
+			padding: 0 0 10px 0
+	table tr td p
+		font-size: $text-sm //14px
+		+font-family($os-reg)
+		&.status
+			padding: 5px
+			text-align: center
+		&.status-bad
+			background-color: #fc8085
+			color: #961419
+		&.status-good
+			background-color: rgba($green, .398)
+			color: darken($green, 15)
+		&.status-warning
+			background-color: #f9b97d
+			color: #d56600
+		&.status-info
+			background-color: #a1c2e9
+			color: #4384cf
+		&.status-fameless
+			background-color: $yellow
+			color: #9f8710
+		&.is-current
+			position: relative
+			&:after
+				content: ''
+				display: block
+				position: absolute
+				top: 50%
+				transform: translateY(-50%)
+				right: calc(100% + 10px)
+				+sprite($s-icon-arrow-right-circle)
+
+.table-bordered
+	table
+		width: 100%
+		tr td p
+			text-align: center
+	thead
+		background-color: $gray
+		tr td p
+			color: $white
+			font-size: $text-reg //16px
+	tbody
+		tr:nth-child(even)
+			background-color: $white-theme
+		tr td p
+			color: $text
+			font-size: $text-reg //16px
+			padding: 20px 10px
+			&.text-green
+				color: $green
+				+font-family($os-bld)
+	.btn-green
+		margin: 40px auto
+.table-mini
+	display: inline-block
+	vertical-align: top
