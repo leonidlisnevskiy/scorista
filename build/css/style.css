@@ -222,7 +222,7 @@ ul li:after { content: ""; display: table; clear: both; }
 .title__text { display: inline-block; font-family: "opensans-bold", Arial, sans-serif; }
 .title__text-box { padding: 18px 16px 10px 12px; background-color: #eeeff3; border: 2px solid #dadbe0; border-radius: 2px; }
 .title__text-box.padding-normaly { width: 210px; display: inline-block; vertical-align: top; padding: 23px 16px 23px 12px; }
-.title__text-box.box-md { padding: 18px 16px 50px 14px; float: right; margin-top: 20px; width: 100%; max-width: 636px; }
+.title__text-box.box-md { padding: 18px 16px 50px 14px; float: right; margin-top: 20px; width: 100%; max-width: 625px; }
 .title__text-box.box-md p { line-height: 1.33; }
 .title__text-box:after { content: ""; display: table; clear: both; }
 .title__text-box i { float: right; }
@@ -236,7 +236,7 @@ ul li:after { content: ""; display: table; clear: both; }
 .map__container { font-size: 0; }
 .map__container iframe { height: 420px; }
 
-.recommended { display: inline-block; vertical-align: top; margin-right: 20px; }
+.recommended { display: inline-block; vertical-align: top; margin-right: 20px; text-align: left; }
 .recommended__text { margin-bottom: 14px; line-height: 1; }
 
 .slider { display: inline-block; vertical-align: top; min-width: 200px; margin-right: 20px; }
@@ -389,8 +389,9 @@ main .inner__in { padding: 30px 0 50px 0; }
 
 .user { float: left; vertical-align: top; margin-right: 20px; }
 .user:after { content: ""; display: table; clear: both; }
-.user-info { padding: 35px 0 45px 0; }
+.user-info { padding: 35px 0 25px 0; }
 .user-info p { margin-bottom: 10px; }
+.user-info p:last-child { margin-bottom: 0; }
 .user-info p a { margin-right: 10px; }
 .user .btn-blue { float: right; }
 .user__field-ava { font-size: 0; margin: 0 auto 18px; overflow: hidden; background-image: url("../img/user-pic.png"); height: 80px; width: 80px; background-position: center center; background-repeat: no-repeat; background-size: cover; will-change: transition, width, height; transition: all 0.24s ease-in-out; }
@@ -423,6 +424,7 @@ main .inner__in { padding: 30px 0 50px 0; }
 .list-dotted li p { font-size: 14px; font-family: "opensans-regular", Arial, sans-serif; display: inline-block; position: relative; z-index: 9999; background-color: #fff; overflow: hidden; line-height: 1.27; }
 .list-dotted li p a { line-height: 0.9; }
 .list-dotted li p.right { float: right; }
+.list-normaly { text-align: left; }
 .list-normaly li { line-height: 1; margin-bottom: 22px; }
 .list-normaly li:last-child { margin-bottom: 0; }
 .list-normaly li p { font-size: 14px; }
