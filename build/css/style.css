@@ -230,7 +230,7 @@ ul li:after { content: ""; display: table; clear: both; }
 .title .btn-yellow { margin-right: 10px; }
 
 .borrowing { display: inline-block; vertical-align: top; margin-right: 20px; float: left; margin-top: 20px; }
-.borrowing ul { margin-top: 115px; }
+.borrowing ul { margin-top: 95px; }
 
 .map__container { font-size: 0; }
 .map__container iframe { height: 420px; }
