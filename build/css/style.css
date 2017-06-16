@@ -411,7 +411,7 @@ main .inner__in:after { content: ""; display: table; clear: both; }
 
 .content { font-size: 0; display: inline-block; width: 100%; vertical-align: top; }
 .content:after { content: ""; display: table; clear: both; }
-.content .col-left { float: left; width: 33.3333%; max-width: 330px; margin-right: 0; padding-right: 20px; }
+.content .col-left { float: left; width: 33.3333%; max-width: 330px; margin-right: 0; }
 .content .col-container { float: right; width: 64.7777%; }
 .content .col-container:after { content: ""; display: table; clear: both; }
 .content .col-container .row { display: inline-block; vertical-align: top; width: 100%; margin-right: -20px; }
