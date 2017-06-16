@@ -47,25 +47,25 @@ h3 { font-size: 18px; }
 h4 { font-size: 16px; }
 
 i { display: block; }
-i.icon-news { background-image: url(../img/sprite.png); background-position: -117px -40px; width: 20px; height: 15px; }
+i.icon-news { background-image: url(../img/sprite.png); background-position: -117px -20px; width: 20px; height: 15px; }
 i.icon-home { background-image: url(../img/sprite.png); background-position: -110px -102px; width: 17px; height: 16px; }
 i.icon-alert { background-image: url(../img/sprite.png); background-position: -59px -60px; width: 24px; height: 22px; }
-i.icon-cash { background-image: url(../img/sprite.png); background-position: -22px -102px; width: 17px; height: 17px; }
-i.icon-dosie { background-image: url(../img/sprite.png); background-position: -142px -21px; width: 17px; height: 15px; }
+i.icon-cash { background-image: url(../img/sprite.png); background-position: 0px -102px; width: 17px; height: 17px; }
+i.icon-dosie { background-image: url(../img/sprite.png); background-position: -117px -82px; width: 17px; height: 15px; }
 i.icon-translater { background-image: url(../img/sprite.png); background-position: -60px -30px; width: 25px; height: 22px; }
 i.icon-question { background-image: url(../img/sprite.png); background-position: 0px -30px; width: 25px; height: 25px; }
 i.icon-question-white { background-image: url(../img/sprite.png); background-position: -30px -30px; width: 25px; height: 25px; }
 i.icon-api { background-image: url(../img/sprite.png); background-position: -42px -124px; width: 17px; height: 13px; }
-i.icon-case { background-image: url(../img/sprite.png); background-position: -117px -82px; width: 17px; height: 15px; }
-i.icon-disabled { background-image: url(../img/sprite.png); background-position: 0px 0px; width: 25px; height: 25px; }
-i.icon-report { background-image: url(../img/sprite.png); background-position: -66px -102px; width: 17px; height: 17px; }
-i.icon-users { background-image: url(../img/sprite.png); background-position: -90px -68px; width: 17px; height: 14px; }
-i.icon-analytics { background-image: url(../img/sprite.png); background-position: -142px -61px; width: 15px; height: 17px; }
-i.icon-analytics-dark { background-image: url(../img/sprite.png); background-position: 0px -124px; width: 15px; height: 17px; }
-i.icon-done { background-image: url(../img/sprite.png); background-position: -60px 0px; width: 25px; height: 25px; }
-i.icon-settings { background-image: url(../img/sprite.png); background-position: -117px -60px; width: 17px; height: 17px; }
+i.icon-case { background-image: url(../img/sprite.png); background-position: -142px -43px; width: 17px; height: 15px; }
+i.icon-disabled { background-image: url(../img/sprite.png); background-position: -60px 0px; width: 25px; height: 25px; }
+i.icon-report { background-image: url(../img/sprite.png); background-position: -88px -102px; width: 17px; height: 17px; }
+i.icon-users { background-image: url(../img/sprite.png); background-position: -142px -105px; width: 17px; height: 14px; }
+i.icon-analytics { background-image: url(../img/sprite.png); background-position: -142px -83px; width: 15px; height: 17px; }
+i.icon-analytics-dark { background-image: url(../img/sprite.png); background-position: -142px -21px; width: 15px; height: 17px; }
+i.icon-done { background-image: url(../img/sprite.png); background-position: 0px 0px; width: 25px; height: 25px; }
+i.icon-settings { background-image: url(../img/sprite.png); background-position: -22px -102px; width: 17px; height: 17px; }
 i.icon-warning { background-image: url(../img/sprite.png); background-position: -30px 0px; width: 25px; height: 25px; }
-i.icon-btn-nav { background-image: url(../img/sprite.png); background-position: -117px 0px; width: 20px; height: 15px; }
+i.icon-btn-nav { background-image: url(../img/sprite.png); background-position: -117px -40px; width: 20px; height: 15px; }
 i.icon-arrow-right-circle { background-image: url(../img/sprite.png); background-position: 0px -87px; width: 34px; height: 10px; }
 i.icon-arrow-down-red { background-image: url(../img/sprite.png); background-position: -90px -45px; width: 18px; height: 18px; }
 i.icon-arrow-right-gray { background-image: url(../img/sprite.png); background-position: -90px -22px; width: 18px; height: 18px; }
@@ -326,15 +326,15 @@ ul li:after { content: ""; display: table; clear: both; }
 .menu__link { color: #adb6c3; text-decoration: none; padding: 15px 20px; display: block; position: relative; font-family: "opensans-bold", Arial, sans-serif; text-align: left; transition: all 0.24s ease-in-out; font-size: 14px; }
 .menu__link:after { content: ""; display: table; clear: both; }
 .menu__link:hover { background-color: #2f3949; color: #fff; }
-.menu__link:hover i.icon-news { background-image: url(../img/sprite.png); background-position: -117px -20px; width: 20px; height: 15px; }
+.menu__link:hover i.icon-news { background-image: url(../img/sprite.png); background-position: -117px 0px; width: 20px; height: 15px; }
 .menu__link:hover i.icon-home { background-image: url(../img/sprite.png); background-position: -142px 0px; width: 17px; height: 16px; }
-.menu__link:hover i.icon-analytics { background-image: url(../img/sprite.png); background-position: -142px -83px; width: 15px; height: 17px; }
-.menu__link:hover i.icon-report { background-image: url(../img/sprite.png); background-position: -44px -102px; width: 17px; height: 17px; }
+.menu__link:hover i.icon-analytics { background-image: url(../img/sprite.png); background-position: 0px -124px; width: 15px; height: 17px; }
+.menu__link:hover i.icon-report { background-image: url(../img/sprite.png); background-position: -66px -102px; width: 17px; height: 17px; }
 .menu__link:hover i.icon-case { background-image: url(../img/sprite.png); background-position: -20px -124px; width: 17px; height: 15px; }
-.menu__link:hover i.icon-cash { background-image: url(../img/sprite.png); background-position: 0px -102px; width: 17px; height: 17px; }
-.menu__link:hover i.icon-dosie { background-image: url(../img/sprite.png); background-position: -142px -41px; width: 17px; height: 15px; }
-.menu__link:hover i.icon-settings { background-image: url(../img/sprite.png); background-position: -88px -102px; width: 17px; height: 17px; }
-.menu__link:hover i.icon-users { background-image: url(../img/sprite.png); background-position: -142px -105px; width: 17px; height: 14px; }
+.menu__link:hover i.icon-cash { background-image: url(../img/sprite.png); background-position: -117px -60px; width: 17px; height: 17px; }
+.menu__link:hover i.icon-dosie { background-image: url(../img/sprite.png); background-position: -142px -63px; width: 17px; height: 15px; }
+.menu__link:hover i.icon-settings { background-image: url(../img/sprite.png); background-position: -44px -102px; width: 17px; height: 17px; }
+.menu__link:hover i.icon-users { background-image: url(../img/sprite.png); background-position: -90px -68px; width: 17px; height: 14px; }
 .menu__link:hover i.icon-api { background-image: url(../img/sprite.png); background-position: -64px -124px; width: 17px; height: 13px; }
 .menu__link.is-current { position: relative; background-color: #2f3949; color: #fff; }
 .menu__link.is-current:before { position: absolute; display: block; height: 100%; width: 4px; content: ""; top: 0; left: 0; background-color: #36a533; }

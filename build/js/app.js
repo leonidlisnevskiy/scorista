@@ -24,6 +24,7 @@ $(document).ready(function() {
 	noUiSlider.create(connectSlider, {
 		start: 280,
 		margin: 0,
+		padding: 0,
 		tooltips: [ true ],
 		connect: [true, false],
 		range: {
@@ -32,78 +33,79 @@ $(document).ready(function() {
 		}
 	});
 
-	$(".js-dropdown").click(function(e) {
-		e.preventDefault();
-		$(".js-dropdown-content").toggleClass("is-open");
-	});
 
-	$(".js-open-map").click(function(e) {
-		e.preventDefault();
-		$(".js-map").toggleClass("is-active");
-	});
+$(".js-dropdown").click(function(e) {
+	e.preventDefault();
+	$(".js-dropdown-content").toggleClass("is-open");
+});
 
-	$(".js-close-map").click(function(e) {
-		e.preventDefault();
-		$(".js-map").removeClass("is-active");
-	});
+$(".js-open-map").click(function(e) {
+	e.preventDefault();
+	$(".js-map").toggleClass("is-active");
+});
 
-
-	$(".js-open-table").click(function(e) {
-		e.preventDefault();
-		$(".js-table").toggleClass("is-active");
-	});
-
-	$(".js-close-table").click(function(e) {
-		e.preventDefault();
-		$(".js-table").removeClass("is-active");
-	});
+$(".js-close-map").click(function(e) {
+	e.preventDefault();
+	$(".js-map").removeClass("is-active");
+});
 
 
-	$(".js-btn-nav").click(function() {
-		$body.toggleClass("is-open");
-	});
+$(".js-open-table").click(function(e) {
+	e.preventDefault();
+	$(".js-table").toggleClass("is-active");
+});
 
-	$('#js-status-good').LineProgressbar({
-		percentage:30,
-		radius: '0',
-		height: '40px',
-		fillBackgroundColor: 'rgba(68,171,65,.4)'
-	});
+$(".js-close-table").click(function(e) {
+	e.preventDefault();
+	$(".js-table").removeClass("is-active");
+});
 
-	$('#js-status-good2').LineProgressbar({
-		percentage:30,
-		radius: '0',
-		height: '40px',
-		fillBackgroundColor: 'rgba(68,171,65,.4)'
-	});
 
-	$('#js-status-fameless').LineProgressbar({
-		percentage:50,
-		radius: '0',
-		height: '40px',
-		fillBackgroundColor: 'rgba(254, 216, 24, .4)'
-	});
+$(".js-btn-nav").click(function() {
+	$body.toggleClass("is-open");
+});
 
-	$('#js-status-fameless2').LineProgressbar({
-		percentage:50,
-		radius: '0',
-		height: '40px',
-		fillBackgroundColor: 'rgba(254, 216, 24, .4)'
-	});
+$('#js-status-good').LineProgressbar({
+	percentage:30,
+	radius: '0',
+	height: '40px',
+	fillBackgroundColor: 'rgba(68,171,65,.4)'
+});
 
-	$('#js-status-bad').LineProgressbar({
-		percentage:20,
-		radius: '0',
-		height: '40px',
-		fillBackgroundColor: '#fc8085'
-	});
+$('#js-status-good2').LineProgressbar({
+	percentage:30,
+	radius: '0',
+	height: '40px',
+	fillBackgroundColor: 'rgba(68,171,65,.4)'
+});
 
-	$('#js-status-bad2').LineProgressbar({
-		percentage:20,
-		radius: '0',
-		height: '40px',
-		fillBackgroundColor: '#fc8085'
-	});
+$('#js-status-fameless').LineProgressbar({
+	percentage:50,
+	radius: '0',
+	height: '40px',
+	fillBackgroundColor: 'rgba(254, 216, 24, .4)'
+});
+
+$('#js-status-fameless2').LineProgressbar({
+	percentage:50,
+	radius: '0',
+	height: '40px',
+	fillBackgroundColor: 'rgba(254, 216, 24, .4)'
+});
+
+$('#js-status-bad').LineProgressbar({
+	percentage:20,
+	radius: '0',
+	height: '40px',
+	fillBackgroundColor: '#fc8085'
+});
+
+$('#js-status-bad2').LineProgressbar({
+	percentage:20,
+	radius: '0',
+	height: '40px',
+	fillBackgroundColor: '#fc8085'
+});
 
 	//custom scrollbar
 	$(".nano").nanoScroller({
