@@ -28,8 +28,6 @@
 		background-color: transparent
 	&.btn-rounded
 		border-radius: 50px
-		&:active
-			box-shadow: none
 	&-nav
 		padding: 0
 		background-color: transparent
@@ -108,19 +106,19 @@
 	&.btn-md
 		padding: 0 40px
 	&-close
-		font-size: 0
 		background-image: url("../img/btn-close.png")
 		background-position: center center
+		box-shadow: 0.521px 2.954px 13px 0px rgba(0, 0, 0, 0.118)
 		background-repeat: no-repeat
-		height: 40px
+		background-color: #2f333a
 		border-radius: 50%
-		width: 40px
 		position: absolute
+		display: block
+		height: 40px
+		width: 40px
 		right: -20px
+		font-size: 0
+		padding: 0
 		top: -20px
-		background-color: $dark
 		&:active
 			top: -19px
-		&:hover
-			background-color: lighten($dark, 10)
-			transform: rotate(-38deg)

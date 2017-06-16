@@ -94,10 +94,6 @@ ul li
 		border-bottom: 2px solid $border-light
 		position: relative
 		margin-bottom: 51px
-		&.is-open
-			.image-centered
-				img
-					transform: rotateZ(-180deg)
 		.image-centered
 			position: absolute
 			display: block
@@ -165,6 +161,7 @@ ul li
 	vertical-align: top
 	margin-right: 20px
 	float: left
+	margin-top: 20px
 	ul
 		margin-top: 115px
 // map
@@ -289,6 +286,8 @@ ul li
 	&__content
 		float: right
 		max-width: 75%
+		.card
+			min-height: 150px
 
 // bg-variants
 .bg-overlay

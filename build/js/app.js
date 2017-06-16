@@ -115,15 +115,6 @@ $('#js-status-bad2').LineProgressbar({
 		alwaysVisible: false
 	});
 
-	// map scroll disable
-	$('.map-container').click(function () {
-		$('.map-container iframe').css("pointer-events", "auto");
-	});
-
-	$( ".map-container" ).mouseleave(function() {
-		$('.map-container iframe').css("pointer-events", "none");
-	});
-
 	$(".js-show").click(function(e){
 		e.preventDefault();
 		$(".js-hidden").toggleClass("is-visible");
