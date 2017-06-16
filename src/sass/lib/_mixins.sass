@@ -109,3 +109,17 @@
 =scrollbar-track-piece
 	&::-webkit-scrollbar-track-piece
 		@content
+
+=child($direction)
+	@if $direction == t
+		&:last-child
+			margin-top: 0
+	@if $direction == r
+		&:last-child
+			margin-right: 0
+	@if $direction == l
+		&:last-child
+			margin-left: 0
+	@if $direction == b
+		&:last-child
+			margin-bottom: 0

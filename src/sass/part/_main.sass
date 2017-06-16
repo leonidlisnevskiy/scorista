@@ -10,7 +10,9 @@ main
 		padding: 0 30px
 		max-width: 1200px
 		margin: 0
+		+clr
 		&__in
+			+clr
 			padding: 30px 0 50px 0
 
 .forecast
@@ -22,6 +24,9 @@ main
 .counter
 	width: 100%
 	font-size: 0
+	display: inline-block
+	vertical-align: top
+	+clr
 	&__title
 		display: inline-block
 		font-size: $text-sm //14px
@@ -44,6 +49,7 @@ main
 	&__item
 		margin-bottom: 12px
 		position: relative
+		+child(b)
 		p
 			text-align: right
 			display: inline-block
@@ -142,3 +148,35 @@ main
 		padding: 0 16px 0 12px
 		p
 			line-height: 58px
+
+
+
+.content
+	+clr
+	font-size: 0
+	display: inline-block
+	width: 100%
+	vertical-align: top
+	.col-left
+		float: left
+		width: 33.3333%
+		max-width: 330px
+		margin-right: 0
+		padding-right: 20px
+	.col-container
+		float: right
+		width: 64.7777%
+		+clr
+		.row
+			display: inline-block
+			vertical-align: top
+			width: 100%
+			margin-right: -20px
+			+clr
+			&-2-col
+				width: 50%
+				padding: 0 20px 0 0
+				display: inline-block
+				vertical-align: top
+				&:last-child
+					padding: 0
