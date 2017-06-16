@@ -208,7 +208,7 @@ ul li:after { content: ""; display: table; clear: both; }
 
 .margin-1x-bottom { margin-bottom: 35px; }
 
-.border-bottom { padding-bottom: 35px; border-bottom: 2px solid #dadbe0; }
+.border-bottom { padding-bottom: 50px; margin-bottom: 50px; border-bottom: 2px solid #dadbe0; }
 
 .title__in { padding: 30px; }
 .title__in:after { content: ""; display: table; clear: both; }
@@ -246,12 +246,13 @@ ul li:after { content: ""; display: table; clear: both; }
 .petition--good { background-color: #44ab41; }
 .petition--good p { color: #fff; font-size: 20px; font-family: "opensans-bold", Arial, sans-serif; }
 
+.noUi-target { margin: 25px auto 60px; }
 .noUi-connect { border-radius: 0; }
 
-.circle-pulsar { position: relative; width: 85px; height: 85px; display: inline-block; line-height: 85px; text-align: center; vertical-align: middle; margin-top: 25px; }
+.circle-pulsar { position: relative; width: 85px; height: 85px; display: inline-block; line-height: 85px; text-align: center; vertical-align: middle; }
 .circle-pulsar:after, .circle-pulsar:before { content: ""; display: block; border-radius: 50%; position: absolute; }
 .circle-pulsar:after { top: 0; width: 100%; height: 100%; background-color: #fed818; margin: 0 auto; z-index: 1; top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); transform: translate(-50%, -50%); width: 115px; height: 115px; }
-.circle-pulsar:before { box-shadow: 0 0 0 5px #fff, 0 0 0 11px #fed818, 0 0 0 17px #fff, 0 0 0 23px #fed818, 0 0 0 29px #fff, 0 0 0 35px #fed818; height: 100%; width: 100%; z-index: 2; }
+.circle-pulsar:before { box-shadow: 0 0 0 5px #fff, 0 0 0 11px #fed818, 0 0 0 17px #fff, 0 0 0 23px #fed818; height: 100%; width: 100%; z-index: 2; }
 .circle-pulsar p { font-size: 36px; color: #3b3d44; display: inline-block; position: relative; line-height: 1; vertical-align: middle; z-index: 9999; font-family: "opensans-bold", Arial, sans-serif; }
 
 .field { padding: 50px 0; border-bottom: 2px solid #dadbe0; font-size: 0; vertical-align: top; }
@@ -414,7 +415,7 @@ main .inner__in { padding: 30px 0 50px 0; }
 .card__status--warning p { color: #e4030b; }
 .card__status--disable p { color: #666d76; }
 
-.list-dotted { text-align: left; padding: 45px 20px; display: inline-block; width: 100%; vertical-align: top; }
+.list-dotted { text-align: left; padding-left: 20px; padding-right: 20px; display: inline-block; width: 100%; vertical-align: top; }
 .list-dotted li { display: block; line-height: 1; margin-bottom: 25px; position: relative; }
 .list-dotted li:after { content: ""; display: table; clear: both; }
 .list-dotted li:last-child { margin-bottom: 0; }
