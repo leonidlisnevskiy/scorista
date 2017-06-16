@@ -258,6 +258,7 @@ ul li:after { content: ""; display: table; clear: both; }
 .field { padding: 50px 0; border-bottom: 2px solid #dadbe0; font-size: 0; vertical-align: top; }
 .field:after { content: ""; display: table; clear: both; }
 .field:last-child { border-bottom: none; }
+.field:first-child { padding-top: 37px; }
 .field p { display: inline-block; }
 .field__aside { width: 100%; text-align: left; max-width: 25%; float: left; vertical-align: top; display: inline-block; padding-right: 30px; }
 .field__aside:after { content: ""; display: table; clear: both; }
@@ -374,7 +375,7 @@ main .inner__in:after { content: ""; display: table; clear: both; }
 .forecast { font-size: 0; }
 .forecast .grid__item { padding-bottom: 0; }
 
-.counter { width: 100%; font-size: 0; display: inline-block; vertical-align: top; }
+.counter { width: 100%; font-size: 0; display: inline-block; vertical-align: top; margin-bottom: 49px; }
 .counter:after { content: ""; display: table; clear: both; }
 .counter__title { display: inline-block; font-size: 14px; line-height: 1.42; font-family: "opensans-bold", Arial, sans-serif; }
 .counter__field { display: inline-block; width: 100%; vertical-align: top; background-color: #eeeff3; }
@@ -415,6 +416,8 @@ main .inner__in:after { content: ""; display: table; clear: both; }
 .content .col-container:after { content: ""; display: table; clear: both; }
 .content .col-container .row { display: inline-block; vertical-align: top; width: 100%; margin-right: -20px; }
 .content .col-container .row:after { content: ""; display: table; clear: both; }
+.content .col-container .row.bordered { padding-bottom: 48px; margin-bottom: 48px; border-bottom: 2px solid #dadbe0; }
+.content .col-container .row.bordered:nth-child(4n) { margin-bottom: 37px; }
 .content .col-container .row-2-col { width: 50%; padding: 0 20px 0 0; display: inline-block; vertical-align: top; }
 .content .col-container .row-2-col:last-child { padding: 0; }
 
