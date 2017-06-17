@@ -7,8 +7,6 @@ main
 	will-change: padding-left
 	transition: all .24s ease-in-out
 	.inner
-		padding: 0 30px
-		max-width: 1200px
 		margin: 0
 		+clr
 		&__in
@@ -93,11 +91,26 @@ main
 		max-width: 220px
 		float: right
 
+// box1
 .main-box
 	display: inline-block
 	vertical-align: top
 	float: right
 	width: calc(100% - 280px)
+	text-align: center
+	+clr
+	&-left
+		float: left
+		margin-right: 20px
+		+clr
+	&-container
+		+clr
+		display: inline-block
+		width: 100%
+		float: right
+		max-width: 680px
+		+r(1388)
+			max-width: 630px
 .user
 	float: left
 	vertical-align: top
@@ -169,6 +182,8 @@ main
 		width: 33.3333%
 		margin-right: 0
 		float: left
+		.btn.btn-orange
+			margin-bottom: 77px
 	.col-container
 		width: 64.7777%
 		float: right
