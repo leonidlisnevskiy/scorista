@@ -297,13 +297,13 @@ ul li:after { content: ""; display: table; clear: both; }
 .btn-close:active { top: -19px; }
 
 .popup { pointer-events: none; position: fixed; top: 0; bottom: 0; opacity: 0; z-index: 9999; will-change: transform, opacity, transition; -webkit-transform: translateX(-50%); -moz-transform: translateX(-50%); -ms-transform: translateX(-50%); -o-transform: translateX(-50%); left: 50%; transition: all 0.34s linear; width: 100%; overflow-x: auto; height: 100%; background-color: rgba(47, 57, 73, 0.9); }
+.popup::-webkit-scrollbar { width: 0; }
 .popup.is-active { display: block; opacity: 1; visibility: visible; pointer-events: auto; }
 .popup-container { max-width: 80%; width: 100%; background-color: #fff; position: absolute; top: 15%; left: 50%; -webkit-transform: translateX(-50%); -moz-transform: translateX(-50%); -ms-transform: translateX(-50%); -o-transform: translateX(-50%); }
 .popup__title { padding: 25px; border-bottom: 1px solid #b6b4b6; text-align: center; }
-.popup-map .popup-container { height: 90vh; top: 50%; left: 50%; transform: translate(-50%, -50%); -webkit-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); }
-.popup-map .popup-container .map { height: 100%; }
+.popup-map .popup-container { height: 80%; top: 50%; left: 50%; transform: translate(-50%, -50%); -webkit-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); }
+.popup-map .popup-container .map { height: 100%; overflow: hidden; }
 .popup-map .popup-container .map__container { height: 100%; }
-.popup-map .popup-container .map__container img, .popup-map .popup-container .map__container iframe { min-height: 900px; margin-bottom: 20px; }
 .popup-table .popup-container { height: auto; }
 
 .map__container { font-size: 0; text-align: center; }
@@ -492,11 +492,3 @@ main .inner__in:after { content: ""; display: table; clear: both; }
 @media only screen and (max-width: 1388px) {
 
  .main-box-container { max-width: 630px; } }
-
-@media only screen and (max-width: 1366px) {
-
- .popup-map .popup-container .map__container img, .popup-map .popup-container .map__container iframe { min-height: 700px; } }
-
-@media only screen and (max-width: 768px) {
-
- .popup-map .popup-container .map__container img, .popup-map .popup-container .map__container iframe { min-height: auto; } }
