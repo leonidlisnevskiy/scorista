@@ -1,13 +1,15 @@
 .sidebar
 	background-color: $dark
-	position: fixed
-	top: 0
 	width: 100%
 	height: 100%
+	min-height: 100%
 	width: 100%
 	max-width: 200px
 	text-align: center
 	font-size: 0
+	position: absolute
+	top: 0
+	left: 0
 	will-change: transform
 	transition: all .24s ease-in-out
 	&__field
@@ -23,3 +25,5 @@
 				float: none
 				display: inline-block
 				vertical-align: bottom
+	&-wrapper
+		background-color: $dark
