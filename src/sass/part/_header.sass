@@ -29,6 +29,20 @@
 	&__link
 		display: block
 		border-left: 1px solid $border
+		&.is-counter
+			position: relative
+			&:after
+				display: block
+				position: absolute
+				content: '96'
+				color: $white
+				top: 18px
+				right: 10px
+				font-size: 12px
+				line-height: 1
+				background-color: $orange
+				border-radius: 7px
+				padding: 3px 8px
 		&:hover
 			background-color: $gray
 			i.icon

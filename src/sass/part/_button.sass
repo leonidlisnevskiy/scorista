@@ -122,3 +122,23 @@
 		top: -20px
 		&:active
 			top: -19px
+	&-down
+		width: 40px
+		height: 40px
+		border-radius: 50%
+		background-color: $white
+		border: 2px solid $white-theme
+		position: relative
+		transition: all .24s ease-in-out
+		display: inline-block
+		vertical-align: middle
+		margin: 0 auto
+		&:hover
+			border-color: darken($white-theme, 5)
+		i
+			position: absolute
+			top: 50%
+			left: 50%
+			transform: translate(-50%, -50%)
+			z-index: 9
+			display: block

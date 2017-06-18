@@ -112,9 +112,8 @@ ul li
 			top: calc(100% - 26px)
 			left: 50%
 			transform: translateX(-50%)
-			img
-				will-change: transform
-				transition: all .24s ease-in-out
+		&.is-open .btn-down
+			transform: rotate(-180deg)
 		&-container
 			width: 100%
 			will-change: opacity, height
@@ -130,6 +129,15 @@ ul li
 				overflow: visible
 			p
 				font-size: $text-sm
+		.bg-down
+			display: block
+			width: 58px
+			margin: 0 auto
+			height: 56px
+			line-height: 56px
+			background-image: url("../img/bg-shape-down.png")
+			background-position: center center
+			background-repeat: no-repeat
 	&__text
 		display: inline-block
 		+font-family($os-bld)
