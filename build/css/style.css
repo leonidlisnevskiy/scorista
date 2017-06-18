@@ -194,6 +194,7 @@ section:after { content: ""; display: table; clear: both; }
 ul li:after { content: ""; display: table; clear: both; }
 
 .col-left { width: 30%; float: left; margin-right: 60px; text-align: center; }
+.col-left ul.list-dotted:last-child { padding: 0 20px; }
 
 .col-right { display: inline-block; width: 64%; vertical-align: top; }
 
