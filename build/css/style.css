@@ -366,7 +366,7 @@ ul li:after { content: ""; display: table; clear: both; }
 .header__item { display: inline-block; }
 .header__link { display: block; border-left: 1px solid #eeeff3; }
 .header__link.is-counter { position: relative; }
-.header__link.is-counter:after { display: block; position: absolute; content: "96"; color: #fff; top: 18px; right: 10px; font-size: 12px; line-height: 1; background-color: #ef7300; border-radius: 7px; padding: 3px 8px; }
+.header__link.is-counter:after { display: block; position: absolute; content: "96"; color: #fff; top: 18px; right: 10px; font-size: 12px; line-height: 1; background-color: #ef7300; border-radius: 8.5px; padding: 3px 8px; }
 .header__link:hover { background-color: #9ba3af; }
 .header__link:hover i.icon-question { background-image: url(../img/sprite.png); background-position: -30px -30px; width: 25px; height: 25px; }
 .header__link:hover i.icon-alert { background-image: url(../img/sprite.png); background-position: -59px -60px; width: 24px; height: 22px; }
