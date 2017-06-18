@@ -215,7 +215,7 @@ ul li:after { content: ""; display: table; clear: both; }
 
 .title__in { padding: 30px; }
 .title__in:after { content: ""; display: table; clear: both; }
-.title__shaped { padding: 21px 30px 28px; background-color: #eeeff3; border-top: 2px solid #dadbe0; border-bottom: 2px solid #dadbe0; position: relative; margin-bottom: 51px; }
+.title__shaped { padding: 16px 30px 25px; background-color: #eeeff3; border-top: 2px solid #dadbe0; border-bottom: 2px solid #dadbe0; position: relative; margin-bottom: 51px; }
 .title__shaped .image-centered { position: absolute; display: block; cursor: pointer; text-decoration: none; font-size: 0; border-radius: 50%; z-index: 3; top: calc(100% - 26px); left: 50%; -webkit-transform: translateX(-50%); -ms-transform: translateX(-50%); transform: translateX(-50%); }
 .title__shaped.is-open .btn-down { -webkit-transform: rotate(-180deg); -ms-transform: rotate(-180deg); transform: rotate(-180deg); }
 .title__shaped-container { width: 100%; will-change: opacity, height; transition: all 0.24s ease-in-out; height: 0; visibility: hidden; overflow: hidden; opacity: 0; }
@@ -299,7 +299,7 @@ ul li:after { content: ""; display: table; clear: both; }
 .btn.btn-md { padding: 0 40px; }
 .btn-close { background-image: url("../img/btn-close.png"); background-position: center center; box-shadow: 0.521px 2.954px 13px 0px rgba(0, 0, 0, 0.118); background-repeat: no-repeat; background-color: #2f333a; border-radius: 50%; position: absolute; display: block; height: 40px; width: 40px; right: -20px; font-size: 0; padding: 0; top: -20px; }
 .btn-close:active { top: -19px; }
-.btn-down { width: 40px; height: 40px; border-radius: 50%; background-color: #fff; border: 2px solid #eeeff3; position: relative; transition: all 0.24s ease-in-out; display: inline-block; vertical-align: middle; margin: 0 auto; }
+.btn-down { width: 40px; height: 40px; border-radius: 50%; background-color: #fff; border: 2px solid #dadbe0; position: relative; transition: all 0.24s ease-in-out; display: inline-block; vertical-align: middle; margin: 0 auto; }
 .btn-down i { position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); transform: translate(-50%, -50%); z-index: 9; display: block; }
 
 .popup { pointer-events: none; position: fixed; top: 0; bottom: 0; opacity: 0; z-index: 9999; will-change: transform, opacity, transition; -webkit-transform: translateX(-50%); -moz-transform: translateX(-50%); -ms-transform: translateX(-50%); -o-transform: translateX(-50%); left: 50%; transition: all 0.34s linear; width: 100%; overflow-x: auto; height: 100%; background-color: rgba(47, 57, 73, 0.9); }
