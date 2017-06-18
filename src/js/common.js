@@ -103,12 +103,12 @@ $('#js-status-bad2').LineProgressbar({
 });
 
 	//custom scrollbar
-	$(".nano").nanoScroller({
-		stop: false,
-		flash: false,
-		iOSNativeScrolling: true,
-		alwaysVisible: false
-	});
+	// $(".nano").nanoScroller({
+	// 	stop: false,
+	// 	flash: false,
+	// 	iOSNativeScrolling: true,
+	// 	alwaysVisible: false
+	// });
 
 	$(".js-show").click(function(e){
 		e.preventDefault();
